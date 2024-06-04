@@ -1,6 +1,18 @@
-## Getting Started
+## MySimpleCalculator
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is my implementation of a Simple Calculator using Java & JavaFX on an Apple Silicon Mac in VSCode.
+
+## Features:
+
+Use Apple Calculator App as an inspiration
+
+Iteration 1:
+- Main Screen has a display that shows the current number, the digits 0-10, decimal point, add, minus, times, divide, equals, negative, and a clear button
+- Number defaults to 0 and prevent cutoff by rounding
+- A disabled button that increases the size of the screen and offers much more functions
+
+Iteration 2:
+- Implement option to expand window and access a lot more functions
 
 ## Folder Structure
 
@@ -16,4 +28,3 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-# MySimpleCalculator
