@@ -4,7 +4,8 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 ## Features:
 
-Use Apple Calculator App as an inspiration
+- Use Apple Calculator App as an inspiration and to figure out logic/funcitons
+- Should only have two screens and one logic file
 
 Iteration 1:
 - Main Screen has a display that shows the current number, the digits 0-10, decimal point, add, minus, times, divide, equals, negative, and a clear button

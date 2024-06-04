@@ -1,3 +1,5 @@
+package FrontEnd;
+
 import javafx.stage.Stage;
 
 public class Main {
