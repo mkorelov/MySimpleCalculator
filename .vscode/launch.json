@@ -9,13 +9,6 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "FrontEnd.Main",
-            "projectName": "MySimpleCalculator_e63608da"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
             "vmArgs": "--module-path '/Users/michaelkorelov/Documents/Projects/javafx-sdk-22.0.1/lib' --add-modules javafx.controls,javafx.fxml"
         }
     ]
