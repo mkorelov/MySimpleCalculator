@@ -8,9 +8,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-        PrimaryFrame root = new PrimaryFrame();
+        PrimaryScreenFrame primary = new PrimaryScreenFrame();
         stage.setTitle("Calculator");
-        stage.setScene(new Scene(root, 500, 600));
+        stage.setScene(new Scene(primary, 375, 450));
         stage.setResizable(false);
         stage.show();
     }
