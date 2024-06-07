@@ -3,11 +3,11 @@ package FrontEnd;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.ColumnConstraints;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.*;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.RowConstraints;
 
 class PrimaryScreen extends GridPane {
     // Buttons of Calc
@@ -118,52 +118,47 @@ class PrimaryScreen extends GridPane {
         nine.setPrefHeight(100);
 
 
-        grid = new GridPane();
+        more = new Button("More");
+        more.setPrefWidth(100);
+        more.setPrefHeight(100);
 
-        grid.getColumnConstraints().add(new ColumnConstraints(100));
-        grid.getColumnConstraints().add(new ColumnConstraints(100));
-        grid.getColumnConstraints().add(new ColumnConstraints(100));
-        grid.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
 
-        grid.getRowConstraints().add(new RowConstraints(100));
-        grid.getRowConstraints().add(new RowConstraints(100));
-        grid.getRowConstraints().add(new RowConstraints(100));
-        grid.getRowConstraints().add(new RowConstraints(100));
-        grid.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
 
-        grid.add(clear, 0, 0);
-        grid.add(negative, 1, 0);
-        grid.add(percent, 2, 0);
-        grid.add(divide, 3, 0);
+        this.add(more, 0, 0);
+        this.add(clear, 1, 0);
+        this.add(negative, 2, 0);
+        this.add(divide, 3, 0);
 
-        grid.add(seven, 0, 1);
-        grid.add(eight, 1, 1);
-        grid.add(nine, 2, 1);
-        grid.add(times, 3, 1);
+        this.add(seven, 0, 1);
+        this.add(eight, 1, 1);
+        this.add(nine, 2, 1);
+        this.add(times, 3, 1);
 
-        grid.add(four, 0, 2);
-        grid.add(five, 1, 2);
-        grid.add(six, 2, 2);
-        grid.add(minus, 3, 2);
+        this.add(four, 0, 2);
+        this.add(five, 1, 2);
+        this.add(six, 2, 2);
+        this.add(minus, 3, 2);
 
-        grid.add(one, 0, 3);
-        grid.add(two, 1, 3);
-        grid.add(three, 2, 3);
-        grid.add(plus, 3, 3);
+        this.add(one, 0, 3);
+        this.add(two, 1, 3);
+        this.add(three, 2, 3);
+        this.add(plus, 3, 3);
 
-        grid.add(zero, 0, 4);
-        
-        grid.add(decimal, 2, 4);
-        grid.add(equals, 3, 4);
+        this.add(zero, 0, 4);
+        this.add(decimal, 1, 4);
+        this.add(percent, 2, 4);
+        this.add(equals, 3, 4);
 
-        this.getChildren().add(grid);
-    }
-}
-
-class PrimaryScreenFooter extends HBox {
-    // Unnecessary
-    PrimaryScreenFooter() {
-
+        //this.getChildren().add();
     }
 }
 
@@ -175,10 +170,14 @@ class PrimaryScreenHeader extends HBox {
 }
 
 class PrimaryScreenFrame extends BorderPane {
-    private PrimaryScreen screen;
+    private PrimaryScreenHeader display;
+    private PrimaryScreen buttons;
 
     PrimaryScreenFrame() {
-        screen = new PrimaryScreen();
-        this.setBottom(screen);
+        display = new PrimaryScreenHeader();
+        buttons = new PrimaryScreen();
+
+        this.setTop(display);
+        this.setBottom(buttons);
     }
 }
