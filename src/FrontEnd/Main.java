@@ -10,7 +10,7 @@ public class Main extends Application {
     public void start(Stage stage) {
         PrimaryScreenFrame primary = new PrimaryScreenFrame();
         stage.setTitle("Calculator");
-        stage.setScene(new Scene(primary, 375, 450));
+        stage.setScene(new Scene(primary, 400, 500));
         stage.setResizable(false);
         stage.show();
     }
