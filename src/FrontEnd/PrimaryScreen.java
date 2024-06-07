@@ -10,6 +10,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.*;
 
 class PrimaryScreen extends GridPane {
+    // Buttons of Calc
     private GridPane grid;
 
     private Button clear;
@@ -41,25 +42,81 @@ class PrimaryScreen extends GridPane {
         //this.setStyle();
 
         clear = new Button("AC");
+        clear.setPrefWidth(100);
+        clear.setPrefHeight(100);
+
         negative = new Button("+/-");
+        negative.setPrefWidth(100);
+        negative.setPrefHeight(100);
+
         percent = new Button("%");
+        percent.setPrefWidth(100);
+        percent.setPrefHeight(100);
+
         decimal = new Button(".");
+        decimal.setPrefWidth(100);
+        decimal.setPrefHeight(100);
+
         plus = new Button("+");
+        plus.setPrefWidth(100);
+        plus.setPrefHeight(100);
+
         minus = new Button("-");
+        minus.setPrefWidth(100);
+        minus.setPrefHeight(100);
+
         times = new Button("x");
+        times.setPrefWidth(100);
+        times.setPrefHeight(100);
+
         divide = new Button("/");
+        divide.setPrefWidth(100);
+        divide.setPrefHeight(100);
+
         equals = new Button("=");
+        equals.setPrefWidth(100);
+        equals.setPrefHeight(100);
 
         zero = new Button("0");
+        zero.setPrefWidth(100);
+        zero.setPrefHeight(100);
+
         one = new Button("1");
+        one.setPrefWidth(100);
+        one.setPrefHeight(100);
+
         two = new Button("2");
+        two.setPrefWidth(100);
+        two.setPrefHeight(100);
+
         three = new Button("3");
+        three.setPrefWidth(100);
+        three.setPrefHeight(100);
+
         four = new Button("4");
+        four.setPrefWidth(100);
+        four.setPrefHeight(100);
+
         five = new Button("5");
+        five.setPrefWidth(100);
+        five.setPrefHeight(100);
+
         six = new Button("6");
+        six.setPrefWidth(100);
+        six.setPrefHeight(100);
+
         seven = new Button("7");
+        seven.setPrefWidth(100);
+        seven.setPrefHeight(100);
+
         eight = new Button("8");
+        eight.setPrefWidth(100);
+        eight.setPrefHeight(100);
+
         nine = new Button("9");
+        nine.setPrefWidth(100);
+        nine.setPrefHeight(100);
+
 
         grid = new GridPane();
 
@@ -99,19 +156,19 @@ class PrimaryScreen extends GridPane {
         grid.add(decimal, 2, 4);
         grid.add(equals, 3, 4);
 
-
-        //grid.setAlignment(Pos.CENTER);
         this.getChildren().add(grid);
     }
 }
 
 class PrimaryScreenFooter extends HBox {
+    // Unnecessary
     PrimaryScreenFooter() {
 
     }
 }
 
 class PrimaryScreenHeader extends HBox {
+    // Display of Calc
     PrimaryScreenHeader() {
 
     }
@@ -122,6 +179,6 @@ class PrimaryScreenFrame extends BorderPane {
 
     PrimaryScreenFrame() {
         screen = new PrimaryScreen();
-        this.setCenter(screen);
+        this.setBottom(screen);
     }
 }

@@ -2,6 +2,13 @@
 
 This is my implementation of a Simple Calculator using Java & JavaFX on an Apple Silicon Mac in VSCode.
 
+## TODO
+
+1. Increase Text Size
+2. Create Display
+3. Implement Logic
+4. Improve UI
+
 ## Features:
 
 - Use Apple Calculator App as an inspiration and to figure out logic/funcitons
