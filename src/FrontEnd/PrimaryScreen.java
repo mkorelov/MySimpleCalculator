@@ -8,6 +8,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import java.io.File;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -43,7 +44,7 @@ class PrimaryScreen extends GridPane {
         this.setPrefSize(400,500);
         //this.setStyle();
 
-        Font font = new Font(30);
+        //Font font = new Font(30);
 
         String path = "src/expand.png";
         Image image = new Image(new File(path).toURI().toString());
@@ -57,97 +58,97 @@ class PrimaryScreen extends GridPane {
         more.setPrefHeight(100);
 
         clear = new Button("AC");
-        clear.setFont(font);
+        clear.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         clear.setPrefWidth(100);
         clear.setPrefHeight(100);
 
         negative = new Button("+/-");
-        negative.setFont(font);
+        negative.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         negative.setPrefWidth(100);
         negative.setPrefHeight(100);
 
         percent = new Button("%");
-        percent.setFont(font);
+        percent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         percent.setPrefWidth(100);
         percent.setPrefHeight(100);
 
         decimal = new Button(".");
-        decimal.setFont(font);
+        decimal.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         decimal.setPrefWidth(100);
         decimal.setPrefHeight(100);
 
         plus = new Button("+");
-        plus.setFont(font);
+        plus.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         plus.setPrefWidth(100);
         plus.setPrefHeight(100);
 
         minus = new Button("-");
-        minus.setFont(font);
+        minus.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         minus.setPrefWidth(100);
         minus.setPrefHeight(100);
 
         times = new Button("x");
-        times.setFont(font);
+        times.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         times.setPrefWidth(100);
         times.setPrefHeight(100);
 
         divide = new Button("/");
-        divide.setFont(font);
+        divide.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         divide.setPrefWidth(100);
         divide.setPrefHeight(100);
 
         equals = new Button("=");
-        equals.setFont(font);
+        equals.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         equals.setPrefWidth(100);
         equals.setPrefHeight(100);
 
         zero = new Button("0");
-        zero.setFont(font);
+        zero.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         zero.setPrefWidth(100);
         zero.setPrefHeight(100);
 
         one = new Button("1");
-        one.setFont(font);
+        one.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         one.setPrefWidth(100);
         one.setPrefHeight(100);
 
         two = new Button("2");
-        two.setFont(font);
+        two.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         two.setPrefWidth(100);
         two.setPrefHeight(100);
 
         three = new Button("3");
-        three.setFont(font);
+        three.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         three.setPrefWidth(100);
         three.setPrefHeight(100);
 
         four = new Button("4");
-        four.setFont(font);
+        four.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         four.setPrefWidth(100);
         four.setPrefHeight(100);
 
         five = new Button("5");
-        five.setFont(font);
+        five.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         five.setPrefWidth(100);
         five.setPrefHeight(100);
 
         six = new Button("6");
-        six.setFont(font);
+        six.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         six.setPrefWidth(100);
         six.setPrefHeight(100);
 
         seven = new Button("7");
-        seven.setFont(font);
+        seven.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         seven.setPrefWidth(100);
         seven.setPrefHeight(100);
 
         eight = new Button("8");
-        eight.setFont(font);
+        eight.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         eight.setPrefWidth(100);
         eight.setPrefHeight(100);
 
         nine = new Button("9");
-        nine.setFont(font);
+        nine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         nine.setPrefWidth(100);
         nine.setPrefHeight(100);
 
@@ -195,10 +196,8 @@ class PrimaryScreenHeader extends HBox {
         this.setPrefSize(400,100);
         //this.setStyle();
 
-        Font font = new Font(70);
-
         Text text = new Text("0");
-        text.setFont(font);
+        text.setFont(Font.font("Arial", FontWeight.BOLD, 70));
         this.getChildren().add(text);
         this.setAlignment(Pos.BOTTOM_RIGHT);
     }
