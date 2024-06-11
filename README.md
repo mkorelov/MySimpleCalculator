@@ -9,6 +9,9 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 3. Implement Logic
 4. Improve UI
 
+Reload screen after each button is clicked
+- see if there is a way to reload only one part of the frame
+
 ## Features:
 
 - Use Apple Calculator App as an inspiration and to figure out logic/funcitons
