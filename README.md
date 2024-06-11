@@ -4,11 +4,12 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 ## TODO
 
-1. Create Display
-2. Implement Logic
-3. Improve UI
+Add getter methods for buttons
 
-Reload screen after each button is clicked
+1. Implement Logic
+2. Improve UI
+
+- Reload screen after each button is clicked?
 - see if there is a way to reload only one part of the frame
 
 ## Features:

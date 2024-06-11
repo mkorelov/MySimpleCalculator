@@ -16,6 +16,7 @@ import javafx.scene.text.Text;
 
 class PrimaryScreen extends GridPane {
     // Buttons of Calculator
+    private Button more;
     private Button clear;
     private Button negative;
     private Button percent;
@@ -37,20 +38,15 @@ class PrimaryScreen extends GridPane {
     private Button eight;
     private Button nine;
 
-    // TODO: Expand to a larger screen w/ more functions
-    private Button more;
-
     PrimaryScreen() {
         this.setPrefSize(400,500);
         //this.setStyle();
 
-        //Font font = new Font(30);
-
         String path = "src/expand.png";
         Image image = new Image(new File(path).toURI().toString());
         ImageView view = new ImageView(image);
-        view.setFitWidth(80);
-        view.setFitHeight(80);
+        view.setFitWidth(40);
+        view.setFitHeight(40);
 
         more = new Button();
         more.setGraphic(view);
@@ -188,6 +184,12 @@ class PrimaryScreen extends GridPane {
         this.add(percent, 2, 4);
         this.add(equals, 3, 4);
     }
+
+    Button getMoreButton() {
+        return this.more;
+    } 
+
+    // Add the rest of the buttons
 }
 
 class PrimaryScreenHeader extends HBox {
@@ -207,11 +209,43 @@ class PrimaryScreenFrame extends BorderPane {
     private PrimaryScreenHeader display;
     private PrimaryScreen buttons;
 
+    private Button moreButton;
+    private Button clearButton;
+    private Button negativeButton;
+    private Button percentButton;
+    private Button decimalButton;
+    private Button plusButton;
+    private Button minusButton;
+    private Button timesButton;
+    private Button divideButton;
+    private Button equalsButton;
+
+    private Button zeroButton;
+    private Button oneButton;
+    private Button twoButton;
+    private Button threeButton;
+    private Button fourButton;
+    private Button fiveButton;
+    private Button sixButton;
+    private Button sevenButton;
+    private Button eightButton;
+    private Button nineButton;
+
     PrimaryScreenFrame() {
         display = new PrimaryScreenHeader();
         buttons = new PrimaryScreen();
 
         this.setTop(display);
         this.setBottom(buttons);
+
+        moreButton = buttons.getMoreButton();
+
+        addListeners();
+    }
+
+    public void addListeners() {
+        moreButton.setOnAction(e -> {
+
+        });
     }
 }
