@@ -4,10 +4,9 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 ## TODO
 
-1. Increase Text Size
-2. Create Display
-3. Implement Logic
-4. Improve UI
+1. Create Display
+2. Implement Logic
+3. Improve UI
 
 Reload screen after each button is clicked
 - see if there is a way to reload only one part of the frame

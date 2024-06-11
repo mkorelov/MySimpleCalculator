@@ -8,6 +8,9 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.text.Font;
+import java.io.File;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 class PrimaryScreen extends GridPane {
     // Buttons of Calculator
@@ -36,9 +39,20 @@ class PrimaryScreen extends GridPane {
     private Button more;
 
     PrimaryScreen() {
-        //this.setPrefSize();
-        //this.setStyle();
+        this.setPrefSize(400,500);
+
         Font font = new Font(30);
+
+        String path = "src/expand.png";
+        Image image = new Image(new File(path).toURI().toString());
+        ImageView view = new ImageView(image);
+        view.setFitWidth(80);
+        view.setFitHeight(80);
+
+        more = new Button();
+        more.setGraphic(view);
+        more.setPrefWidth(100);
+        more.setPrefHeight(100);
 
         clear = new Button("AC");
         clear.setFont(font);
@@ -135,12 +149,6 @@ class PrimaryScreen extends GridPane {
         nine.setPrefWidth(100);
         nine.setPrefHeight(100);
 
-
-        more = new Button("More");
-        more.setFont(font);
-        more.setPrefWidth(100);
-        more.setPrefHeight(100);
-
         this.getColumnConstraints().add(new ColumnConstraints(100));
         this.getColumnConstraints().add(new ColumnConstraints(100));
         this.getColumnConstraints().add(new ColumnConstraints(100));
@@ -182,7 +190,7 @@ class PrimaryScreen extends GridPane {
 class PrimaryScreenHeader extends HBox {
     // Display of Calc
     PrimaryScreenHeader() {
-
+        this.setPrefSize(400,100);
     }
 }
 
