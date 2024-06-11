@@ -11,6 +11,7 @@ import javafx.scene.text.Font;
 import java.io.File;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 
 class PrimaryScreen extends GridPane {
     // Buttons of Calculator
@@ -40,6 +41,7 @@ class PrimaryScreen extends GridPane {
 
     PrimaryScreen() {
         this.setPrefSize(400,500);
+        //this.setStyle();
 
         Font font = new Font(30);
 
@@ -188,9 +190,17 @@ class PrimaryScreen extends GridPane {
 }
 
 class PrimaryScreenHeader extends HBox {
-    // Display of Calc
+    // Display of Calculator
     PrimaryScreenHeader() {
         this.setPrefSize(400,100);
+        //this.setStyle();
+
+        Font font = new Font(70);
+
+        Text text = new Text("0");
+        text.setFont(font);
+        this.getChildren().add(text);
+        this.setAlignment(Pos.BOTTOM_RIGHT);
     }
 }
 
