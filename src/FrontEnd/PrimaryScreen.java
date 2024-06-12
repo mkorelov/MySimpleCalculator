@@ -313,12 +313,108 @@ class PrimaryScreenFrame extends BorderPane {
         this.setBottom(buttons);
 
         moreButton = buttons.getMoreButton();
+        clearButton = buttons.getClearButton();
+        negativeButton = buttons.getNegativeButton();
+        percentButton = buttons.getPercentButton();
+        decimalButton = buttons.getDecimalButton();
+        plusButton = buttons.getPlusButton();
+        minusButton = buttons.getMinusButton();
+        timesButton = buttons.getTimesButton();
+        divideButton = buttons.getDivideButton();
+        equalsButton = buttons.getEqualsButton();
+
+        zeroButton = buttons.getZeroButton();
+        oneButton = buttons.getOneButton();
+        twoButton = buttons.getTwoButton();
+        threeButton = buttons.getThreeButton();
+        fourButton = buttons.getFourButton();
+        fiveButton = buttons.getFiveButton();
+        sixButton = buttons.getSixButton();
+        sevenButton = buttons.getSevenButton();
+        eightButton = buttons.getEightButton();
+        nineButton = buttons.getNineButton();
 
         addListeners();
     }
 
     public void addListeners() {
         moreButton.setOnAction(e -> {
+
+        });
+
+        clearButton.setOnAction(e -> {
+
+        });
+
+        negativeButton.setOnAction(e -> {
+
+        });
+
+        percentButton.setOnAction(e -> {
+
+        });
+
+        decimalButton.setOnAction(e -> {
+
+        });
+
+        plusButton.setOnAction(e -> {
+
+        });
+
+        minusButton.setOnAction(e -> {
+
+        });
+
+        timesButton.setOnAction(e -> {
+
+        });
+
+        divideButton.setOnAction(e -> {
+
+        });
+
+        equalsButton.setOnAction(e -> {
+
+        });
+
+        zeroButton.setOnAction(e -> {
+
+        });
+
+        oneButton.setOnAction(e -> {
+
+        });
+
+        twoButton.setOnAction(e -> {
+
+        });
+
+        threeButton.setOnAction(e -> {
+
+        });
+
+        fourButton.setOnAction(e -> {
+
+        });
+
+        fiveButton.setOnAction(e -> {
+
+        });
+
+        sixButton.setOnAction(e -> {
+
+        });
+
+        sevenButton.setOnAction(e -> {
+
+        });
+
+        eightButton.setOnAction(e -> {
+
+        });
+        
+        nineButton.setOnAction(e -> {
 
         });
     }
