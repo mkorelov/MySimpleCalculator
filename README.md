@@ -4,8 +4,6 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 ## TODO
 
-Add getter methods for buttons
-
 1. Implement Logic
 2. Improve UI
 

@@ -189,7 +189,81 @@ class PrimaryScreen extends GridPane {
         return this.more;
     } 
 
-    // Add the rest of the buttons
+    Button getClearButton() {
+        return this.clear;
+    }
+
+    Button getNegativeButton() {
+        return this.negative;
+    }
+
+    Button getPercentButton() {
+        return this.percent;
+    }
+
+    Button getDecimalButton() {
+        return this.decimal;
+    }
+
+    Button getPlusButton() {
+        return this.plus;
+    }
+
+    Button getMinusButton() {
+        return this.minus;
+    }
+
+    Button getTimesButton() {
+        return this.times;
+    }
+
+    Button getDivideButton() {
+        return this.divide;
+    }
+
+    Button getEqualsButton() {
+        return this.equals;
+    }
+
+    Button getZeroButton() {
+        return this.zero;
+    }
+    
+    Button getOneButton() {
+        return this.one;
+    }
+
+    Button getTwoButton() {
+        return this.two;
+    }
+
+    Button getThreeButton() {
+        return this.three;
+    }
+
+    Button getFourButton() {
+        return this.four;
+    }
+
+    Button getFiveButton() {
+        return this.five;
+    }
+
+    Button getSixButton() {
+        return this.six;
+    }
+
+    Button getSevenButton() {
+        return this.seven;
+    }
+
+    Button getEightButton() {
+        return this.eight;
+    }
+
+    Button getNineButton() {
+        return this.nine;
+    }
 }
 
 class PrimaryScreenHeader extends HBox {
