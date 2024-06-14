@@ -1,5 +1,7 @@
 package FrontEnd;
 
+import BackEnd.Calculator;
+
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.BorderPane;
 import javafx.geometry.Pos;
@@ -268,11 +270,11 @@ class PrimaryScreen extends GridPane {
 
 class PrimaryScreenHeader extends HBox {
     // Display of Calculator
-    PrimaryScreenHeader() {
+    PrimaryScreenHeader(String s) {
         this.setPrefSize(400,100);
         //this.setStyle();
 
-        Text text = new Text("0");
+        Text text = new Text(s);
         text.setFont(Font.font("Arial", FontWeight.BOLD, 70));
         this.getChildren().add(text);
         this.setAlignment(Pos.BOTTOM_RIGHT);
@@ -282,6 +284,7 @@ class PrimaryScreenHeader extends HBox {
 class PrimaryScreenFrame extends BorderPane {
     private PrimaryScreenHeader display;
     private PrimaryScreen buttons;
+    private Calculator calculator;
 
     private Button moreButton;
     private Button clearButton;
@@ -306,7 +309,8 @@ class PrimaryScreenFrame extends BorderPane {
     private Button nineButton;
 
     PrimaryScreenFrame() {
-        display = new PrimaryScreenHeader();
+        calculator = new Calculator();
+        display = new PrimaryScreenHeader(calculator.get());
         buttons = new PrimaryScreen();
 
         this.setTop(display);
