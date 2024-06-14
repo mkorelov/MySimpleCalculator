@@ -7,8 +7,8 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 1. Implement Logic
 2. Improve UI
 
-- Reload screen after each button is clicked?
-- see if there is a way to reload only one part of the frame
+- highlight which operation is selected until ac button pressed or another number and operation (equals) is pressed after
+
 
 ## Features:
 

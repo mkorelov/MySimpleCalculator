@@ -342,12 +342,20 @@ class PrimaryScreenFrame extends BorderPane {
     }
 
     public void addListeners() {
+        /* Do majority of logic and calcuations in Calculator class
+        - Reload screen after each button is clicked?
+        - see if there is a way to reload only one part of the frame
+        */
+
         moreButton.setOnAction(e -> {
 
         });
 
         clearButton.setOnAction(e -> {
-
+            /*
+            - initially AC, after a number is entered it switches to C if clicked then it returns to AC
+            - clicking c means clear the current number, but if an operation is hit before you need to then hit AC as well to all clear 
+            */
         });
 
         negativeButton.setOnAction(e -> {
