@@ -14,7 +14,7 @@ public class Calculator {
     }
 
     // returns the number that needs to be displayed by UI
-    public String get() {
+    public String getCurrent() {
         return current;
     }
 
@@ -24,8 +24,12 @@ public class Calculator {
     }
 
     // add a number to the display
-    public void enter(int n) {
-
+    public void enterDigit(String num) {
+        if (current.equals("0")) {
+            current = num;
+        } else {
+            current = current + num;
+        }
     }
 
     public void negate() {

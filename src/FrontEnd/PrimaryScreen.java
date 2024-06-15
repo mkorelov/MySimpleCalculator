@@ -310,7 +310,7 @@ class PrimaryScreenFrame extends BorderPane {
 
     PrimaryScreenFrame() {
         calculator = new Calculator();
-        display = new PrimaryScreenHeader(calculator.get());
+        display = new PrimaryScreenHeader(calculator.getCurrent());
         buttons = new PrimaryScreen();
 
         this.setTop(display);
@@ -360,7 +360,7 @@ class PrimaryScreenFrame extends BorderPane {
 
         negativeButton.setOnAction(e -> {
             calculator.negate();
-            display = new PrimaryScreenHeader(calculator.get());
+            display = new PrimaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
@@ -397,7 +397,9 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         oneButton.setOnAction(e -> {
-
+            calculator.enterDigit("1");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         twoButton.setOnAction(e -> {
