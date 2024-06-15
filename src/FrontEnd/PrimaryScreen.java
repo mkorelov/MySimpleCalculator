@@ -359,7 +359,9 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         negativeButton.setOnAction(e -> {
-
+            calculator.negate();
+            display = new PrimaryScreenHeader(calculator.get());
+            this.setTop(display);
         });
 
         percentButton.setOnAction(e -> {

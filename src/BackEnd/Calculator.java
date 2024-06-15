@@ -27,4 +27,10 @@ public class Calculator {
     public void enter(int n) {
 
     }
+
+    public void negate() {
+        if (!current.equals("0")) {
+            current = "-" + current;
+        }
+    }
 }
