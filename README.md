@@ -6,12 +6,10 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 1. Implement Logic
 2. Improve UI
+3. Add error messages (Footer)
 
 - highlight which operation is selected until ac button pressed or another number and operation (equals) is pressed after
-
 - technically can resize font if exceed num of chars allowed, but in later iteration
-
-- add a footer for error messages
 
 ## Features:
 
