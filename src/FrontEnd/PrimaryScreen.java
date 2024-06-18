@@ -354,6 +354,9 @@ class PrimaryScreenFrame extends BorderPane {
             - initially AC, after a number is entered it switches to C if clicked then it returns to AC
             - clicking c means clear the current number, but if an operation is hit before you need to then hit AC as well to all clear 
             */
+            calculator.clear();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         negativeButton.setOnAction(e -> {

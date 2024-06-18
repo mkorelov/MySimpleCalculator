@@ -9,6 +9,7 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 - highlight which operation is selected until ac button pressed or another number and operation (equals) is pressed after
 
+- technically can resize font if exceed num of chars allowed, but in later iteration
 
 ## Features:
 
