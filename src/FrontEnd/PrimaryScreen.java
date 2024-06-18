@@ -343,8 +343,6 @@ class PrimaryScreenFrame extends BorderPane {
 
     public void addListeners() {
         /* Do majority of logic and calcuations in Calculator class
-        - Reload screen after each button is clicked?
-        - see if there is a way to reload only one part of the frame
         */
 
         moreButton.setOnAction(e -> {
@@ -369,7 +367,9 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         decimalButton.setOnAction(e -> {
-
+            calculator.decimal();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         plusButton.setOnAction(e -> {
@@ -393,7 +393,7 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         zeroButton.setOnAction(e -> {
-            
+
         });
 
         oneButton.setOnAction(e -> {
