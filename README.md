@@ -11,6 +11,8 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 - technically can resize font if exceed num of chars allowed, but in later iteration
 
+- add a footer for error messages
+
 ## Features:
 
 - Use Apple Calculator App as an inspiration and to figure out logic/funcitons

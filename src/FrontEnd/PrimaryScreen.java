@@ -366,7 +366,9 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         percentButton.setOnAction(e -> {
-
+            calculator.percent();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         decimalButton.setOnAction(e -> {

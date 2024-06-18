@@ -65,6 +65,17 @@ public class Calculator {
         }
     }
 
+    public void percent() {
+        if (current.equals("0")) {
+            return;
+        }
+        String s = Double.toString(Double.valueOf(current)/100);
+        if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+            return;
+        }
+        current = Double.toString(Double.valueOf(current)/100);
+    }
+
     // clears numbers on display
     public void clear() {
         // currently just resets calc to original settings for testing
