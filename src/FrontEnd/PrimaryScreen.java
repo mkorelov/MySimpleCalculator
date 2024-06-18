@@ -393,7 +393,7 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         zeroButton.setOnAction(e -> {
-
+            
         });
 
         oneButton.setOnAction(e -> {
@@ -403,35 +403,51 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         twoButton.setOnAction(e -> {
-
+            calculator.enterDigit("2");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         threeButton.setOnAction(e -> {
-
+            calculator.enterDigit("3");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         fourButton.setOnAction(e -> {
-
+            calculator.enterDigit("4");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         fiveButton.setOnAction(e -> {
-
+            calculator.enterDigit("5");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         sixButton.setOnAction(e -> {
-
+            calculator.enterDigit("6");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         sevenButton.setOnAction(e -> {
-
+            calculator.enterDigit("7");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         eightButton.setOnAction(e -> {
-
+            calculator.enterDigit("8");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
         
         nineButton.setOnAction(e -> {
-
+            calculator.enterDigit("9");
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
     }
 }
