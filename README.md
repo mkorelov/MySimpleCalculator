@@ -8,6 +8,9 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 2. Improve UI
 3. Add error messages (Footer)
 
+Current Iteration:
+- clear just resets everything, doesn't have dual functions where you can retype one number
+- must click equals for all operations
 - highlight which operation is selected until ac button pressed or another number and operation (equals) is pressed after
 - technically can resize font if exceed num of chars allowed, but in later iteration
 

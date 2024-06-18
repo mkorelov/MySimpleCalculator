@@ -379,7 +379,9 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         plusButton.setOnAction(e -> {
-
+            calculator.add();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         minusButton.setOnAction(e -> {
@@ -395,7 +397,9 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         equalsButton.setOnAction(e -> {
-
+            calculator.equals();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         zeroButton.setOnAction(e -> {

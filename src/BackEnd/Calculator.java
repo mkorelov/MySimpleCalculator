@@ -6,6 +6,8 @@ public class Calculator {
     boolean decimal;    // flag that indicates if number is already decimal
     boolean negative;   // flag that indicates if number is already negative
     int num_chars;    // number of digits on display; reserve one for negative sign
+    String operation;
+    String previous;
     // if decimal == true convert to float otherwise just use int
 
     //String previous;
@@ -17,6 +19,8 @@ public class Calculator {
         decimal = false;
         negative = false;
         num_chars = 1;
+        operation = "";
+        previous = "";
     }
 
     // returns the number that needs to be displayed by UI
@@ -83,5 +87,33 @@ public class Calculator {
         decimal = false;
         negative = false;
         num_chars = 1;
+        operation = "";
+        previous = "";
+    }
+
+    public void add() {
+        if (operation.equals("")) {
+            previous = current;
+            current = "0";
+        }
+        operation = "add";
+    }
+
+    public void equals() {
+        if (operation.equals("add")) {
+            if (decimal == true) {
+                current = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
+            } else {
+                current = Integer.toString(Integer.valueOf(previous) + Integer.valueOf(current));
+            }
+            previous = "";
+            operation = "";
+        } 
+        
+        
+        
+        else { // operation.equals("")
+
+        }
     }
 }
