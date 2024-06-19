@@ -8,6 +8,10 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 2. Improve UI
 3. Add error messages (Footer)
 
+Bugs to fix:
+- decimal/negative after operation is clicked and after equals is clicked
+- percent automatically performs function unlike other operations that require equals to be pressed
+
 Current Iteration:
 - clear just resets everything, doesn't have dual functions where you can retype one number
 - must click equals for all operations

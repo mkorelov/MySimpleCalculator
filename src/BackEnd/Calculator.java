@@ -1,19 +1,13 @@
 package BackEnd;
 
-// Does majority of logic and calcuations
 public class Calculator {
-    String current; // used for the display and uses stringbuilder or just append +  or eventually just use 10*n and add to an int
+    String current; // a member variable that keeps the current number on display and updates the UI
     boolean decimal;    // flag that indicates if number is already decimal
     boolean negative;   // flag that indicates if number is already negative
     int num_chars;    // number of digits on display; reserve one for negative sign
-    String operation;
-    String previous;
-    // if decimal == true convert to float otherwise just use int
+    String operation;   // current active operation
+    String previous;    // member variable that stores the number before an operation was pressed
 
-    //String previous;
-    // a member variable that keeps the current number on display and updates the UI
-
-    // another member variable that stores the number before an operation was pressed
     public Calculator() {
         current = "0";
         decimal = false;
@@ -78,6 +72,12 @@ public class Calculator {
             return;
         }
         current = Double.toString(Double.valueOf(current)/100);
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
     }
 
     // clears numbers on display
@@ -95,6 +95,8 @@ public class Calculator {
         if (operation.equals("")) {
             previous = current;
             current = "0";
+            decimal = false;
+            negative = false;
         }
         operation = "add";
     }
@@ -103,6 +105,8 @@ public class Calculator {
         if (operation.equals("")) {
             previous = current;
             current = "0";
+            decimal = false;
+            negative = false;
         }
         operation = "subtract";
     }
@@ -111,6 +115,8 @@ public class Calculator {
         if (operation.equals("")) {
             previous = current;
             current = "0";
+            decimal = false;
+            negative = false;
         }
         operation = "multiply";
     }
@@ -119,6 +125,8 @@ public class Calculator {
         if (operation.equals("")) {
             previous = current;
             current = "0";
+            decimal = false;
+            negative = false;
         }
         operation = "divide";
     }
@@ -159,9 +167,6 @@ public class Calculator {
             }
             previous = "";
             operation = "";
-        }
-        else { // operation.equals("")
-
         }
     }
 }
