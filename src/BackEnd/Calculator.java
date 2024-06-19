@@ -133,26 +133,35 @@ public class Calculator {
 
     public void equals() {
         if (operation.equals("add")) {
-            if (decimal == true) {
-                current = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
+            current = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
+
+            if (Double.valueOf(current) % 1 != 0) {
+                decimal = true;
             } else {
-                current = Integer.toString(Integer.valueOf(previous) + Integer.valueOf(current));
+                current = Integer.toString((int) Math.round(Double.valueOf(current)));
+                decimal = false;
             }
             previous = "";
             operation = "";
         } else if (operation.equals("subtract")) {
-            if (decimal == true) {
-                current = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
+            current = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
+
+            if (Double.valueOf(current) % 1 != 0) {
+                decimal = true;
             } else {
-                current = Integer.toString(Integer.valueOf(previous) - Integer.valueOf(current));
+                current = Integer.toString((int) Math.round(Double.valueOf(current)));
+                decimal = false;
             }
             previous = "";
             operation = "";
         } else if (operation.equals("multiply")) {
-            if (decimal == true) {
-                current = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
+            current = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
+
+            if (Double.valueOf(current) % 1 != 0) {
+                decimal = true;
             } else {
-                current = Integer.toString(Integer.valueOf(previous) * Integer.valueOf(current));
+                current = Integer.toString((int) Math.round(Double.valueOf(current)));
+                decimal = false;
             }
             previous = "";
             operation = "";
