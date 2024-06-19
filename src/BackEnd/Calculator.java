@@ -78,6 +78,11 @@ public class Calculator {
             current = Integer.toString((int) Math.round(Double.valueOf(current)));
             decimal = false;
         }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        }
     }
 
     // clears numbers on display
