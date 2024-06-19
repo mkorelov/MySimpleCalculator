@@ -99,6 +99,30 @@ public class Calculator {
         operation = "add";
     }
 
+    public void subtract() {
+        if (operation.equals("")) {
+            previous = current;
+            current = "0";
+        }
+        operation = "subtract";
+    }
+
+    public void multiply() {
+        if (operation.equals("")) {
+            previous = current;
+            current = "0";
+        }
+        operation = "multiply";
+    }
+
+    public void divide() {
+        if (operation.equals("")) {
+            previous = current;
+            current = "0";
+        }
+        operation = "divide";
+    }
+
     public void equals() {
         if (operation.equals("add")) {
             if (decimal == true) {
@@ -108,10 +132,31 @@ public class Calculator {
             }
             previous = "";
             operation = "";
-        } 
-        
-        
-        
+        } else if (operation.equals("subtract")) {
+            if (decimal == true) {
+                current = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
+            } else {
+                current = Integer.toString(Integer.valueOf(previous) - Integer.valueOf(current));
+            }
+            previous = "";
+            operation = "";
+        } else if (operation.equals("multiply")) {
+            if (decimal == true) {
+                current = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
+            } else {
+                current = Integer.toString(Integer.valueOf(previous) * Integer.valueOf(current));
+            }
+            previous = "";
+            operation = "";
+        } else if (operation.equals("divide")) {
+            if (decimal == true) {
+                current = Double.toString(Double.valueOf(previous) / Double.valueOf(current));
+            } else {
+                current = Integer.toString(Integer.valueOf(previous) / Integer.valueOf(current));
+            }
+            previous = "";
+            operation = "";
+        }
         else { // operation.equals("")
 
         }

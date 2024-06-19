@@ -342,9 +342,6 @@ class PrimaryScreenFrame extends BorderPane {
     }
 
     public void addListeners() {
-        /* Do majority of logic and calcuations in Calculator class
-        */
-
         moreButton.setOnAction(e -> {
 
         });
@@ -385,15 +382,21 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         minusButton.setOnAction(e -> {
-
+            calculator.subtract();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         timesButton.setOnAction(e -> {
-
+            calculator.multiply();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         divideButton.setOnAction(e -> {
-
+            calculator.divide();
+            display = new PrimaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         equalsButton.setOnAction(e -> {
