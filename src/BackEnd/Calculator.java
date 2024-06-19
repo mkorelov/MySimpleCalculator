@@ -141,6 +141,11 @@ public class Calculator {
                 current = Integer.toString((int) Math.round(Double.valueOf(current)));
                 decimal = false;
             }
+            if (current.charAt(0) == '-') {
+                negative = true;
+            } else {
+                negative = false;
+            }
             previous = "";
             operation = "";
         } else if (operation.equals("subtract")) {
@@ -151,6 +156,11 @@ public class Calculator {
             } else {
                 current = Integer.toString((int) Math.round(Double.valueOf(current)));
                 decimal = false;
+            }
+            if (current.charAt(0) == '-') {
+                negative = true;
+            } else {
+                negative = false;
             }
             previous = "";
             operation = "";
@@ -163,6 +173,11 @@ public class Calculator {
                 current = Integer.toString((int) Math.round(Double.valueOf(current)));
                 decimal = false;
             }
+            if (current.charAt(0) == '-') {
+                negative = true;
+            } else {
+                negative = false;
+            }
             previous = "";
             operation = "";
         } else if (operation.equals("divide")) {
@@ -173,6 +188,11 @@ public class Calculator {
             } else {
                 current = Integer.toString((int) Math.round(Double.valueOf(current)));
                 decimal = false;
+            }
+            if (current.charAt(0) == '-') {
+                negative = true;
+            } else {
+                negative = false;
             }
             previous = "";
             operation = "";
