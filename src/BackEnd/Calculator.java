@@ -86,8 +86,8 @@ public class Calculator {
     }
 
     // clears numbers on display
+    // currently just resets calc to original settings for testing
     public void clear() {
-        // currently just resets calc to original settings for testing
         current = "0";
         decimal = false;
         negative = false;

@@ -8,15 +8,18 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 2. Improve UI
 3. Add error messages (Footer)
 
-Bugs to fix:
-- decimal/negative after operation is clicked and after equals is clicked
-- percent automatically performs function unlike other operations that require equals to be pressed
+Current Bugs: 
 
-Current Iteration:
+Potential Updates:
 - clear just resets everything, doesn't have dual functions where you can retype one number
-- must click equals for all operations
-- highlight which operation is selected until ac button pressed or another number and operation (equals) is pressed after
-- technically can resize font if exceed num of chars allowed, but in later iteration
+- clear button should initially display AC, after a number is entered it switches to C if clicked then it returns to AC
+- clicking clear button when it display C means clear the current number, but if an operation is hit before you need to then hit AC after as well to all clear
+
+- after an operation is clicked, 0 is displayed, instead it shouldn't change display until a number is entered
+- highlight which operation is selected until clear button is pressed or equals is pressed
+- percent automatically performs function unlike other operations that require equals to be pressed
+- must click equals for all operations but on other calculators you can click another operation to calculate the result
+- resize font if exceed num of chars allowed on display
 
 ## Features:
 

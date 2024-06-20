@@ -347,11 +347,6 @@ class PrimaryScreenFrame extends BorderPane {
         });
 
         clearButton.setOnAction(e -> {
-            /*
-            - initially AC, after a number is entered it switches to C if clicked then it returns to AC
-            - clicking c means clear the current number, but if an operation is hit before you need to then hit AC as well to all clear 
-            */
-            // currently just resets to default and clears everything
             calculator.clear();
             display = new PrimaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
