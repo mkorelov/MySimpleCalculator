@@ -343,7 +343,7 @@ class PrimaryScreenFrame extends BorderPane {
 
     public void addListeners() {
         moreButton.setOnAction(e -> {
-
+            // reuse the same stage to open secondary screen with more operations
         });
 
         clearButton.setOnAction(e -> {
