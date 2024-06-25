@@ -5,7 +5,7 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 ## TODO
 
 1. Implement Logic
-2. Improve UI
+2. Improve UI (replace text with transparentimages of symbols)
 3. Add error messages (Footer)
 
 Current Bugs: 
