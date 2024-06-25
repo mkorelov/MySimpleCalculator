@@ -3,6 +3,8 @@ package FrontEnd;
 import BackEnd.Calculator;
 
 import javafx.scene.layout.HBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -50,7 +52,180 @@ class SecondaryScreen extends GridPane {
     private Button nine;
 
     SecondaryScreen() {
+        less = new Button("Less");
+        less.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        less.setPrefWidth(100);
+        less.setPrefHeight(100);
 
+        clear = new Button("AC");
+        clear.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        clear.setPrefWidth(100);
+        clear.setPrefHeight(100);
+
+        negative = new Button("+/-");
+        negative.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        negative.setPrefWidth(100);
+        negative.setPrefHeight(100);
+
+        percent = new Button("%");
+        percent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        percent.setPrefWidth(100);
+        percent.setPrefHeight(100);
+
+        decimal = new Button(".");
+        decimal.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        decimal.setPrefWidth(100);
+        decimal.setPrefHeight(100);
+
+        plus = new Button("+");
+        plus.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        plus.setPrefWidth(100);
+        plus.setPrefHeight(100);
+
+        minus = new Button("-");
+        minus.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        minus.setPrefWidth(100);
+        minus.setPrefHeight(100);
+
+        times = new Button("x");
+        times.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        times.setPrefWidth(100);
+        times.setPrefHeight(100);
+
+        divide = new Button("/");
+        divide.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        divide.setPrefWidth(100);
+        divide.setPrefHeight(100);
+
+        equals = new Button("=");
+        equals.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        equals.setPrefWidth(100);
+        equals.setPrefHeight(100);
+
+        zero = new Button("0");
+        zero.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        zero.setPrefWidth(100);
+        zero.setPrefHeight(100);
+
+        one = new Button("1");
+        one.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        one.setPrefWidth(100);
+        one.setPrefHeight(100);
+
+        two = new Button("2");
+        two.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        two.setPrefWidth(100);
+        two.setPrefHeight(100);
+
+        three = new Button("3");
+        three.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        three.setPrefWidth(100);
+        three.setPrefHeight(100);
+
+        four = new Button("4");
+        four.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        four.setPrefWidth(100);
+        four.setPrefHeight(100);
+
+        five = new Button("5");
+        five.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        five.setPrefWidth(100);
+        five.setPrefHeight(100);
+
+        six = new Button("6");
+        six.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        six.setPrefWidth(100);
+        six.setPrefHeight(100);
+
+        seven = new Button("7");
+        seven.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        seven.setPrefWidth(100);
+        seven.setPrefHeight(100);
+
+        eight = new Button("8");
+        eight.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        eight.setPrefWidth(100);
+        eight.setPrefHeight(100);
+
+        nine = new Button("9");
+        nine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        nine.setPrefWidth(100);
+        nine.setPrefHeight(100);
+
+        sin = new Button("sin");
+        sin.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        sin.setPrefWidth(100);
+        sin.setPrefHeight(100);
+
+        cosine = new Button("cos");
+        cosine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        cosine.setPrefWidth(100);
+        cosine.setPrefHeight(100);
+
+        tangent = new Button("tan");
+        tangent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        tangent.setPrefWidth(100);
+        tangent.setPrefHeight(100);
+
+        cosecant = new Button("csc");
+        cosecant.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        cosecant.setPrefWidth(100);
+        cosecant.setPrefHeight(100);
+
+        secant = new Button("sec");
+        secant.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        secant.setPrefWidth(100);
+        secant.setPrefHeight(100);
+
+        cotangent = new Button("cot");
+        cotangent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        cotangent.setPrefWidth(100);
+        cotangent.setPrefHeight(100);
+    
+        exponent = new Button("x^y");
+        exponent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        exponent.setPrefWidth(100);
+        nine.setPrefHeight(100);
+
+        root = new Button("sqrt(x)");
+        root.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        root.setPrefWidth(100);
+        root.setPrefHeight(100);
+
+        logarithm = new Button("log_x");
+        logarithm.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        logarithm.setPrefWidth(100);
+        logarithm.setPrefHeight(100);
+
+        natural_log = new Button("ln");
+        natural_log.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        natural_log.setPrefWidth(100);
+        natural_log.setPrefHeight(100);
+
+        factorial = new Button("x!");
+        factorial.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        factorial.setPrefWidth(100);
+        factorial.setPrefHeight(100);
+
+        eulers_exp = new Button("e^x");
+        eulers_exp.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        eulers_exp.setPrefWidth(100);
+        eulers_exp.setPrefHeight(100);
+
+        random = new Button("rand");
+        random.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        random.setPrefWidth(100);
+        random.setPrefHeight(100);
+
+        euler_num = new Button("e");
+        euler_num.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        euler_num.setPrefWidth(100);
+        euler_num.setPrefHeight(100);
+
+        pi = new Button("pi");
+        pi.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        pi.setPrefWidth(100);
+        pi.setPrefHeight(100);
     }
 }
 
