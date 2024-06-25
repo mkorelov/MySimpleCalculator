@@ -15,6 +15,8 @@ import java.io.File;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
 
 class PrimaryScreen extends GridPane {
     // Buttons of Calculator
@@ -343,7 +345,12 @@ class PrimaryScreenFrame extends BorderPane {
 
     public void addListeners() {
         moreButton.setOnAction(e -> {
-            // reuse the same stage to open secondary screen with more operations
+            Stage stage = (Stage) moreButton.getScene().getWindow();
+            SecondaryScreenFrame primary = new SecondaryScreenFrame();
+            stage.setTitle("Calculator");
+            stage.setScene(new Scene(primary, 700, 600));
+            stage.setResizable(false);
+            stage.show();
         });
 
         clearButton.setOnAction(e -> {

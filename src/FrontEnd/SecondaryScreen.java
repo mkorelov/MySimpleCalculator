@@ -9,7 +9,7 @@ import javafx.scene.layout.GridPane;
 
 class SecondaryScreen extends GridPane {
     // Buttons of Calculator
-    private Button more;
+    private Button less;
     private Button clear;
     private Button negative;
     private Button percent;
@@ -56,8 +56,14 @@ class SecondaryScreen extends GridPane {
 
 class SecondaryScreenHeader extends HBox{
 
+    SecondaryScreenHeader() {
+
+    }
 }
 
 class SecondaryScreenFrame extends BorderPane {
 
+    SecondaryScreenFrame() {
+        
+    }
 }
