@@ -3,10 +3,12 @@ package FrontEnd;
 import BackEnd.Calculator;
 
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.RowConstraints;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 
 class SecondaryScreen extends GridPane {
@@ -22,12 +24,12 @@ class SecondaryScreen extends GridPane {
     private Button divide;
     private Button equals;
 
-    private Button sin;
+    private Button sine;
     private Button cosine;
     private Button tangent;
-    private Button cosecant;
-    private Button secant;
-    private Button cotangent;
+    private Button arcsine;
+    private Button arccosine;
+    private Button arctangent;
 
     private Button exponent;
     private Button root;
@@ -152,10 +154,10 @@ class SecondaryScreen extends GridPane {
         nine.setPrefWidth(100);
         nine.setPrefHeight(100);
 
-        sin = new Button("sin");
-        sin.setFont(Font.font("Arial", FontWeight.BOLD, 30));
-        sin.setPrefWidth(100);
-        sin.setPrefHeight(100);
+        sine = new Button("sin");
+        sine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        sine.setPrefWidth(100);
+        sine.setPrefHeight(100);
 
         cosine = new Button("cos");
         cosine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
@@ -167,20 +169,20 @@ class SecondaryScreen extends GridPane {
         tangent.setPrefWidth(100);
         tangent.setPrefHeight(100);
 
-        cosecant = new Button("csc");
-        cosecant.setFont(Font.font("Arial", FontWeight.BOLD, 30));
-        cosecant.setPrefWidth(100);
-        cosecant.setPrefHeight(100);
+        arcsine = new Button("sin^-1");
+        arcsine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        arcsine.setPrefWidth(100);
+        arcsine.setPrefHeight(100);
 
-        secant = new Button("sec");
-        secant.setFont(Font.font("Arial", FontWeight.BOLD, 30));
-        secant.setPrefWidth(100);
-        secant.setPrefHeight(100);
+        arccosine = new Button("cos^-1");
+        arccosine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        arccosine.setPrefWidth(100);
+        arccosine.setPrefHeight(100);
 
-        cotangent = new Button("cot");
-        cotangent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
-        cotangent.setPrefWidth(100);
-        cotangent.setPrefHeight(100);
+        arctangent = new Button("tan^-1");
+        arctangent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        arctangent.setPrefWidth(100);
+        arctangent.setPrefHeight(100);
     
         exponent = new Button("x^y");
         exponent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
@@ -226,6 +228,60 @@ class SecondaryScreen extends GridPane {
         pi.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         pi.setPrefWidth(100);
         pi.setPrefHeight(100);
+
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+        this.getColumnConstraints().add(new ColumnConstraints(100));
+
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+        this.getRowConstraints().add(new RowConstraints(100));
+
+        this.add(exponent, 0, 0);
+        this.add(root, 1, 0);
+        this.add(logarithm, 2, 0);
+        this.add(less, 3, 0);
+        this.add(clear, 4, 0);
+        this.add(negative, 5, 0);
+        this.add(divide, 6, 0);
+
+        this.add(random, 0, 1);
+        this.add(factorial, 1, 1);
+        this.add(natural_log, 2, 1);
+        this.add(seven, 3, 1);
+        this.add(eight, 4, 1);
+        this.add(nine, 5, 1);
+        this.add(times, 6, 1);
+
+        this.add(pi, 0, 2);
+        this.add(euler_num, 1, 2);
+        this.add(eulers_exp, 2, 2);
+        this.add(four, 3, 2);
+        this.add(five, 4, 2);
+        this.add(six, 5, 2);
+        this.add(minus, 6, 2);
+
+        this.add(sine, 0, 3);
+        this.add(cosine, 1, 3);
+        this.add(tangent, 2, 3);
+        this.add(one, 3, 3);
+        this.add(two, 4, 3);
+        this.add(three, 5, 3);
+        this.add(plus, 6, 3);
+
+        this.add(arcsine, 0, 4);
+        this.add(arccosine, 1, 4);
+        this.add(arctangent, 2, 4);
+        this.add(zero, 3, 4);
+        this.add(decimal, 4, 4);
+        this.add(percent, 5, 4);
+        this.add(equals, 6, 4);
     }
 }
 
