@@ -3,13 +3,20 @@ package FrontEnd;
 import BackEnd.Calculator;
 
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.BorderPane;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import javafx.scene.control.Button;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
+import java.io.File;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
 
 class SecondaryScreen extends GridPane {
     // Buttons of Calculator
@@ -286,9 +293,15 @@ class SecondaryScreen extends GridPane {
 }
 
 class SecondaryScreenHeader extends HBox{
+    // Display of Calculator
+    SecondaryScreenHeader(String s) {
+        this.setPrefSize(400,100);
+        //this.setStyle();
 
-    SecondaryScreenHeader() {
-
+        Text text = new Text(s);
+        text.setFont(Font.font("Arial", FontWeight.BOLD, 70));
+        this.getChildren().add(text);
+        this.setAlignment(Pos.BOTTOM_RIGHT);
     }
 }
 
