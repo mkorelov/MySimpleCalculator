@@ -290,6 +290,146 @@ class SecondaryScreen extends GridPane {
         this.add(percent, 5, 4);
         this.add(equals, 6, 4);
     }
+
+    Button getLessButton() {
+        return this.less;
+    } 
+
+    Button getClearButton() {
+        return this.clear;
+    }
+
+    Button getNegativeButton() {
+        return this.negative;
+    }
+
+    Button getPercentButton() {
+        return this.percent;
+    }
+
+    Button getDecimalButton() {
+        return this.decimal;
+    }
+
+    Button getPlusButton() {
+        return this.plus;
+    }
+
+    Button getMinusButton() {
+        return this.minus;
+    }
+
+    Button getTimesButton() {
+        return this.times;
+    }
+
+    Button getDivideButton() {
+        return this.divide;
+    }
+
+    Button getEqualsButton() {
+        return this.equals;
+    }
+
+    Button getZeroButton() {
+        return this.zero;
+    }
+    
+    Button getOneButton() {
+        return this.one;
+    }
+
+    Button getTwoButton() {
+        return this.two;
+    }
+
+    Button getThreeButton() {
+        return this.three;
+    }
+
+    Button getFourButton() {
+        return this.four;
+    }
+
+    Button getFiveButton() {
+        return this.five;
+    }
+
+    Button getSixButton() {
+        return this.six;
+    }
+
+    Button getSevenButton() {
+        return this.seven;
+    }
+
+    Button getEightButton() {
+        return this.eight;
+    }
+
+    Button getNineButton() {
+        return this.nine;
+    }
+
+    Button getSineButton() {
+        return this.sine;
+    }
+
+    Button getCosineButton() {
+        return this.cosine;
+    }
+
+    Button getTangentButton() {
+        return this.tangent;
+    }
+
+    Button getArcsineButton() {
+        return this.arcsine;
+    }
+
+    Button getArccosineButton() {
+        return this.arccosine;
+    }
+
+    Button getArctangentButton() {
+        return this.arctangent;
+    }
+
+    Button getExponentButton() {
+        return this.exponent;
+    }
+
+    Button getRootButton() {
+        return this.root;
+    }
+
+    Button getLogarithmButton() {
+        return this.logarithm;
+    }
+
+    Button getNatural_logButton() {
+        return this.natural_log;
+    }
+
+    Button getFactorialButton() {
+        return this.factorial;
+    }
+
+    Button getEulers_expButton() {
+        return this.eulers_exp;
+    }
+
+    Button getRandomButton() {
+        return this.random;
+    }
+
+    Button getEuler_numButton() {
+        return this.euler_num;
+    }
+
+    Button getPiButton() {
+        return this.pi;
+    }
 }
 
 class SecondaryScreenHeader extends HBox{
