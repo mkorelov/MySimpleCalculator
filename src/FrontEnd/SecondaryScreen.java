@@ -446,8 +446,33 @@ class SecondaryScreenHeader extends HBox{
 }
 
 class SecondaryScreenFrame extends BorderPane {
+    private SecondaryScreenHeader display;
+    private SecondaryScreen buttons;
+    private Calculator calculator;
 
-    SecondaryScreenFrame() {
+    private Button moreButton;
+    private Button clearButton;
+    private Button negativeButton;
+    private Button percentButton;
+    private Button decimalButton;
+    private Button plusButton;
+    private Button minusButton;
+    private Button timesButton;
+    private Button divideButton;
+    private Button equalsButton;
+
+    private Button zeroButton;
+    private Button oneButton;
+    private Button twoButton;
+    private Button threeButton;
+    private Button fourButton;
+    private Button fiveButton;
+    private Button sixButton;
+    private Button sevenButton;
+    private Button eightButton;
+    private Button nineButton;
+
+    SecondaryScreenFrame(Calculator calc) {
         
     }
 }
