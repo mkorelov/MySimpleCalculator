@@ -1,5 +1,6 @@
 package BackEnd;
 
+// Calculator Logic
 public class Calculator {
     String current; // a member variable that keeps the current number on display and updates the UI
     boolean decimal;    // flag that indicates if number is already decimal

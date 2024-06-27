@@ -18,8 +18,8 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
+// Calculator Buttons
 class PrimaryScreen extends GridPane {
-    // Buttons of Calculator
     private Button more;
     private Button clear;
     private Button negative;
@@ -30,7 +30,6 @@ class PrimaryScreen extends GridPane {
     private Button times;
     private Button divide;
     private Button equals;
-
     private Button zero;
     private Button one;
     private Button two;
@@ -270,8 +269,8 @@ class PrimaryScreen extends GridPane {
     }
 }
 
+// Calculator Display
 class PrimaryScreenHeader extends HBox {
-    // Display of Calculator
     PrimaryScreenHeader(String s) {
         this.setPrefSize(400,100);
         //this.setStyle();
@@ -283,11 +282,12 @@ class PrimaryScreenHeader extends HBox {
     }
 }
 
+// Calculator UI
 class PrimaryScreenFrame extends BorderPane {
     private PrimaryScreenHeader display;
     private PrimaryScreen buttons;
     private Calculator calculator;
-
+    
     private Button moreButton;
     private Button clearButton;
     private Button negativeButton;
@@ -298,7 +298,6 @@ class PrimaryScreenFrame extends BorderPane {
     private Button timesButton;
     private Button divideButton;
     private Button equalsButton;
-
     private Button zeroButton;
     private Button oneButton;
     private Button twoButton;
@@ -328,7 +327,6 @@ class PrimaryScreenFrame extends BorderPane {
         timesButton = buttons.getTimesButton();
         divideButton = buttons.getDivideButton();
         equalsButton = buttons.getEqualsButton();
-
         zeroButton = buttons.getZeroButton();
         oneButton = buttons.getOneButton();
         twoButton = buttons.getTwoButton();

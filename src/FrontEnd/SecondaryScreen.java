@@ -18,8 +18,8 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
+// Calculator Buttons
 class SecondaryScreen extends GridPane {
-    // Buttons of Calculator
     private Button less;
     private Button clear;
     private Button negative;
@@ -30,25 +30,6 @@ class SecondaryScreen extends GridPane {
     private Button times;
     private Button divide;
     private Button equals;
-
-    private Button sine;
-    private Button cosine;
-    private Button tangent;
-    private Button arcsine;
-    private Button arccosine;
-    private Button arctangent;
-
-    private Button exponent;
-    private Button root;
-    private Button logarithm;
-    private Button natural_log;
-    private Button factorial;
-    private Button eulers_exp;
-    private Button random;
-
-    private Button euler_num;
-    private Button pi;
-
     private Button zero;
     private Button one;
     private Button two;
@@ -59,6 +40,21 @@ class SecondaryScreen extends GridPane {
     private Button seven;
     private Button eight;
     private Button nine;
+    private Button sine;
+    private Button cosine;
+    private Button tangent;
+    private Button arcsine;
+    private Button arccosine;
+    private Button arctangent;
+    private Button exponent;
+    private Button root;
+    private Button logarithm;
+    private Button natural_log;
+    private Button factorial;
+    private Button eulers_exp;
+    private Button random;
+    private Button euler_num;
+    private Button pi;
 
     SecondaryScreen() {
         less = new Button("Less");
@@ -432,8 +428,8 @@ class SecondaryScreen extends GridPane {
     }
 }
 
+// Calculator Display
 class SecondaryScreenHeader extends HBox{
-    // Display of Calculator
     SecondaryScreenHeader(String s) {
         this.setPrefSize(400,100);
         //this.setStyle();
@@ -445,12 +441,13 @@ class SecondaryScreenHeader extends HBox{
     }
 }
 
+// Calculator UI
 class SecondaryScreenFrame extends BorderPane {
     private SecondaryScreenHeader display;
     private SecondaryScreen buttons;
     private Calculator calculator;
 
-    private Button moreButton;
+    private Button lessButton;
     private Button clearButton;
     private Button negativeButton;
     private Button percentButton;
@@ -460,7 +457,6 @@ class SecondaryScreenFrame extends BorderPane {
     private Button timesButton;
     private Button divideButton;
     private Button equalsButton;
-
     private Button zeroButton;
     private Button oneButton;
     private Button twoButton;
@@ -471,14 +467,12 @@ class SecondaryScreenFrame extends BorderPane {
     private Button sevenButton;
     private Button eightButton;
     private Button nineButton;
-
     private Button sineButton;
     private Button cosineButton;
     private Button tangentButton;
     private Button arcsineButton;
     private Button arccosineButton;
     private Button arctangentButton;
-
     private Button exponentButton;
     private Button rootButton;
     private Button logarithmButton;
@@ -486,7 +480,6 @@ class SecondaryScreenFrame extends BorderPane {
     private Button factorialButton;
     private Button eulers_expButton;
     private Button randomButton;
-
     private Button euler_numButton;
     private Button piButton;
 
@@ -497,5 +490,41 @@ class SecondaryScreenFrame extends BorderPane {
 
         this.setTop(display);
         this.setBottom(buttons);
+
+        lessButton = buttons.getLessButton();
+        clearButton = buttons.getClearButton();
+        negativeButton = buttons.getNegativeButton();
+        percentButton = buttons.getPercentButton();
+        decimalButton = buttons.getDecimalButton();
+        plusButton = buttons.getPlusButton();
+        minusButton = buttons.getMinusButton();
+        timesButton = buttons.getTimesButton();
+        divideButton = buttons.getDivideButton();
+        equalsButton = buttons.getEqualsButton();
+        zeroButton = buttons.getZeroButton();
+        oneButton = buttons.getOneButton();
+        twoButton = buttons.getTwoButton();
+        threeButton = buttons.getThreeButton();
+        fourButton = buttons.getFourButton();
+        fiveButton = buttons.getFiveButton();
+        sixButton = buttons.getSixButton();
+        sevenButton = buttons.getSevenButton();
+        eightButton = buttons.getEightButton();
+        nineButton = buttons.getNineButton();
+        sineButton = buttons.getSineButton();
+        cosineButton = buttons.getCosineButton();
+        tangentButton = buttons.getTangentButton();
+        arcsineButton = buttons.getArcsineButton();
+        arccosineButton = buttons.getArccosineButton();
+        arctangentButton = buttons.getArctangentButton();
+        exponentButton = buttons.getExponentButton();
+        rootButton = buttons.getRootButton();
+        logarithmButton = buttons.getLogarithmButton();
+        natural_logButton = buttons.getNatural_logButton();
+        factorialButton = buttons.getFactorialButton();
+        eulers_expButton = buttons.getEulers_expButton();
+        randomButton = buttons.getRandomButton();
+        euler_numButton = buttons.getEuler_numButton();
+        piButton = buttons.getPiButton();
     }
 }
