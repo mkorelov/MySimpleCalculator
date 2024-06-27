@@ -526,5 +526,11 @@ class SecondaryScreenFrame extends BorderPane {
         randomButton = buttons.getRandomButton();
         euler_numButton = buttons.getEuler_numButton();
         piButton = buttons.getPiButton();
+
+        addListeners();
+    }
+
+    public void addListeners() {
+
     }
 }
