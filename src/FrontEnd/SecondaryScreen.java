@@ -194,7 +194,7 @@ class SecondaryScreen extends GridPane {
         exponent = new Button("x^y");
         exponent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         exponent.setPrefWidth(100);
-        nine.setPrefHeight(100);
+        exponent.setPrefHeight(100);
 
         root = new Button("sqrt(x)");
         root.setFont(Font.font("Arial", FontWeight.BOLD, 30));
@@ -472,7 +472,30 @@ class SecondaryScreenFrame extends BorderPane {
     private Button eightButton;
     private Button nineButton;
 
+    private Button sineButton;
+    private Button cosineButton;
+    private Button tangentButton;
+    private Button arcsineButton;
+    private Button arccosineButton;
+    private Button arctangentButton;
+
+    private Button exponentButton;
+    private Button rootButton;
+    private Button logarithmButton;
+    private Button natural_logButton;
+    private Button factorialButton;
+    private Button eulers_expButton;
+    private Button randomButton;
+
+    private Button euler_numButton;
+    private Button piButton;
+
     SecondaryScreenFrame(Calculator calc) {
-        
+        calculator = calc;
+        display = new SecondaryScreenHeader(calculator.getCurrent());
+        buttons = new SecondaryScreen();
+
+        this.setTop(display);
+        this.setBottom(buttons);
     }
 }
