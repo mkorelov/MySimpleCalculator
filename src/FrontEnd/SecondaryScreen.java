@@ -653,5 +653,65 @@ class SecondaryScreenFrame extends BorderPane {
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
+
+        sineButton.setOnAction(e -> {
+            
+        });
+
+        cosineButton.setOnAction(e -> {
+            
+        });
+
+        tangentButton.setOnAction(e -> {
+            
+        });
+
+        arcsineButton.setOnAction(e -> {
+            
+        });
+
+        arccosineButton.setOnAction(e -> {
+            
+        });
+
+        arctangentButton.setOnAction(e -> {
+            
+        });
+
+        exponentButton.setOnAction(e -> {
+            
+        });
+
+        rootButton.setOnAction(e -> {
+            
+        });
+
+        logarithmButton.setOnAction(e -> {
+            
+        });
+
+        natural_logButton.setOnAction(e -> {
+            
+        });
+
+        factorialButton.setOnAction(e -> {
+            
+        });
+
+        eulers_expButton.setOnAction(e -> {
+            
+        });
+
+        randomButton.setOnAction(e -> {
+            
+        });
+
+        euler_numButton.setOnAction(e -> {
+            
+        });
+
+        piButton.setOnAction(e -> {
+            
+        });
     }
 }
