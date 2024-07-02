@@ -695,7 +695,7 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         factorialButton.setOnAction(e -> {
-            
+    
         });
 
         eulers_expButton.setOnAction(e -> {

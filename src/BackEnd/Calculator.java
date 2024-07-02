@@ -86,8 +86,6 @@ public class Calculator {
         }
     }
 
-    // clears numbers on display
-    // currently just resets calc to original settings for testing
     public void clear() {
         current = "0";
         decimal = false;
@@ -202,6 +200,23 @@ public class Calculator {
             }
             previous = "";
             operation = "";
+        }
+    }
+
+    public void factorial() {
+        if (current.equals("0") || decimal == true || negative == true) {
+            return;
+        }
+        
+        int num = 1;
+        for (int i = 2; i <= Integer.valueOf(current); i++) {
+            num = num * i;
+        }
+        String s = Integer.toString(num);
+        if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+            return;
+        } else {
+            current = s;
         }
     }
 }

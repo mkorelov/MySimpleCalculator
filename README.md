@@ -6,7 +6,8 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 1. Implement Logic
 2. Improve UI (replace text with transparent images of symbols)
-3. Add error messages (Footer)
+3. Add error messages (Footer): can't perform operation with decimal, too many digits to fit on screen, etc.
+4. Have something show the current operation (5.9 + 0)
 
 Current Bugs: 
 
