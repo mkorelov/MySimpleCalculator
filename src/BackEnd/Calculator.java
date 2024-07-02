@@ -213,7 +213,8 @@ public class Calculator {
             num = num * i;
         }
         String s = Integer.toString(num);
-        if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+
+        if (s.length() >= 10 || (s.length() == 9 && negative == false) || s.equals("0")) {
             return;
         } else {
             current = s;
