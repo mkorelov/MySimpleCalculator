@@ -10,6 +10,7 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 4. Have something show the current operation (5.9 + 0)
 
 Current Bugs: 
+- trig functions almost always return small decimals, so come up with a way to round
 
 Potential Updates:
 - clear just resets everything, doesn't have dual functions where you can retype one number

@@ -222,6 +222,22 @@ public class Calculator {
     }
 
     public void sine() {
-        
+        String s = Double.toString(Math.sin(Double.valueOf(current)));
+        System.out.println(s);
+        if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+            return;
+        }
+        current = s;
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        } 
     }
 }
