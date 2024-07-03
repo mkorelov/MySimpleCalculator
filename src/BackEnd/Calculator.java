@@ -220,4 +220,8 @@ public class Calculator {
             current = s;
         }
     }
+
+    public void sine() {
+        
+    }
 }
