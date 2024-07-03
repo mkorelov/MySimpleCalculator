@@ -214,7 +214,7 @@ public class Calculator {
         }
         String s = Integer.toString(num);
 
-        if (s.length() >= 10 || (s.length() == 9 && negative == false) || s.equals("0")) {
+        if (s.length() >= 20 || (s.length() == 19 && negative == false) || s.equals("0")) {
             return;
         } else {
             current = s;
@@ -224,7 +224,7 @@ public class Calculator {
     public void sine() {
         String s = Double.toString(Math.sin(Double.valueOf(current)));
         System.out.println(s);
-        if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+        if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
         current = s;

@@ -11,6 +11,8 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 Current Bugs: 
 - trig functions almost always return small decimals, so come up with a way to round
+- every time a number doesn't fit on the screen, check if it a decimal and if the number of digits on the left side of the can fit if rounding the decimal
+-update functions so that they round/cut-off differently depending on the screen size
 
 Potential Updates:
 - clear just resets everything, doesn't have dual functions where you can retype one number
