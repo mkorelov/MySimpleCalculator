@@ -260,4 +260,24 @@ public class Calculator {
             negative = false;
         } 
     }
+
+    public void tangent() {
+        String s = Double.toString(Math.tan(Double.valueOf(current)));
+        System.out.println(s);
+        if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
+            return;
+        }
+        current = s;
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        } 
+    }
 }
