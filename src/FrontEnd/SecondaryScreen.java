@@ -679,7 +679,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         arccosineButton.setOnAction(e -> {
-            
+            calculator.arccosine();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         arctangentButton.setOnAction(e -> {
