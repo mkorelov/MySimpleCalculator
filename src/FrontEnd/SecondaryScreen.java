@@ -721,7 +721,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         euler_numButton.setOnAction(e -> {
-            
+            calculator.enterEuler();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         piButton.setOnAction(e -> {
