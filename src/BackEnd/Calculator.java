@@ -1,5 +1,7 @@
 package BackEnd;
 
+import java.math.*;
+
 // Calculator Logic
 public class Calculator {
     String current; // a member variable that keeps the current number on display and updates the UI
@@ -333,5 +335,9 @@ public class Calculator {
         } else {
             negative = false;
         } 
+    }
+
+    public void enterEuler() {
+        current = "2.71828182845904523536";
     }
 }
