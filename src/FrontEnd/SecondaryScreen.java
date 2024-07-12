@@ -727,7 +727,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         piButton.setOnAction(e -> {
-            
+            calculator.enterPi();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
     }
 }
