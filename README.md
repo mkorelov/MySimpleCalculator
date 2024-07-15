@@ -6,21 +6,19 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 
 1. Implement Logic
 2. Improve UI (replace text with transparent images of symbols)
-3. Add error messages (Footer): can't perform operation with decimal, too many digits to fit on screen, etc.
-4. Have something show the current operation (5.9 + 0)
+3. Add error messages (Footer/header): can't perform operation with decimal, too many digits to fit on screen, etc.
+4. Have footer/header show the current operation (5.9 + 0)
 
-Current Bugs: 
-- trig functions almost always return small decimals, so come up with a way to round
-- every time a number doesn't fit on the screen, check if it a decimal and if the number of digits on the left side of the can fit if rounding the decimal
+PrimaryScreen Bugs:
 - update functions so that they round/cut-off differently depending on the screen size
-- 0 can't be negative (add check in negate method)
-- shouldn't be able to add numbers to pi or euler's
+
+SecondaryScreen Bugs:
+- shouldn't be able to add numbers to pi or euler's, should just replace them
 
 Potential Updates:
 - clear just resets everything, doesn't have dual functions where you can retype one number
 - clear button should initially display AC, after a number is entered it switches to C if clicked then it returns to AC
 - clicking clear button when it display C means clear the current number, but if an operation is hit before you need to then hit AC after as well to all clear
-
 - after an operation is clicked, 0 is displayed, instead it shouldn't change display until a number is entered
 - highlight which operation is selected until clear button is pressed or equals is pressed
 - percent automatically performs function unlike other operations that require equals to be pressed
