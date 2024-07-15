@@ -343,12 +343,12 @@ class PrimaryScreenFrame extends BorderPane {
 
     public void addListeners() {
         moreButton.setOnAction(e -> {
-            Stage stage = (Stage) moreButton.getScene().getWindow();
+            /*Stage stage = (Stage) moreButton.getScene().getWindow();
             SecondaryScreenFrame primary = new SecondaryScreenFrame(calculator);
             stage.setTitle("Calculator");
             stage.setScene(new Scene(primary, 700, 600));
             stage.setResizable(false);
-            stage.show();
+            stage.show();*/
         });
 
         clearButton.setOnAction(e -> {

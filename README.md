@@ -13,7 +13,8 @@ Current Bugs:
 - trig functions almost always return small decimals, so come up with a way to round
 - every time a number doesn't fit on the screen, check if it a decimal and if the number of digits on the left side of the can fit if rounding the decimal
 - update functions so that they round/cut-off differently depending on the screen size
-- 0 can't benegative (add check in negate method)
+- 0 can't be negative (add check in negate method)
+- shouldn't be able to add numbers to pi or euler's
 
 Potential Updates:
 - clear just resets everything, doesn't have dual functions where you can retype one number

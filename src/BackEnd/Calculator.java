@@ -338,10 +338,10 @@ public class Calculator {
     }
 
     public void enterEuler() {
-        current = "2.7182818284590452";
+        current = "2.718281828459045";
     }
 
     public void enterPi() {
-        current = "3.1415926535897932";
+        current = "3.141592653589793";
     }
 }
