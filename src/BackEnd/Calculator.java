@@ -43,7 +43,7 @@ public class Calculator {
 
     // negates current number on display
     public void negate() {
-        if (negative == false && Double.valueOf(current) != 0) {
+        if (negative == false) {
             current = "-" + current;
             negative = true;
             num_chars += 1;
