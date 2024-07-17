@@ -30,7 +30,6 @@ public class Calculator {
         if (num_chars == 10 || (num_chars == 9 && negative == false)) {
             return;
         }
-
         if (current.equals("0")) {
             current = num;
         } else if (current.equals("-0")) {
@@ -72,6 +71,7 @@ public class Calculator {
         }
         String s = Double.toString(Double.valueOf(current)/100);
         if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+            // introuduce a way to round if possible instead of not showing anything
             return;
         }
         current = Double.toString(Double.valueOf(current)/100);
@@ -139,8 +139,13 @@ public class Calculator {
 
     public void equals() {
         if (operation.equals("add")) {
-            current = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
+            String s = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
+            if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+                // introuduce a way to round if possible instead of not showing anything
+                return;
+            }
 
+            current = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
             if (Double.valueOf(current) % 1 != 0) {
                 decimal = true;
             } else {
@@ -155,8 +160,13 @@ public class Calculator {
             previous = "";
             operation = "";
         } else if (operation.equals("subtract")) {
-            current = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
+            String s = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
+            if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+                // introuduce a way to round if possible instead of not showing anything
+                return;
+            }
 
+            current = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
             if (Double.valueOf(current) % 1 != 0) {
                 decimal = true;
             } else {
@@ -171,8 +181,13 @@ public class Calculator {
             previous = "";
             operation = "";
         } else if (operation.equals("multiply")) {
-            current = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
+            String s = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
+            if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+                // introuduce a way to round if possible instead of not showing anything
+                return;
+            }
 
+            current = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
             if (Double.valueOf(current) % 1 != 0) {
                 decimal = true;
             } else {
@@ -187,8 +202,13 @@ public class Calculator {
             previous = "";
             operation = "";
         } else if (operation.equals("divide")) {
-            current = Double.toString(Double.valueOf(previous) / Double.valueOf(current));
+            String s = Double.toString(Double.valueOf(previous) / Double.valueOf(current));
+            if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
+                // introuduce a way to round if possible instead of not showing anything
+                return;
+            }
 
+            current = Double.toString(Double.valueOf(previous) / Double.valueOf(current));
             if (Double.valueOf(current) % 1 != 0) {
                 decimal = true;
             } else {
@@ -205,6 +225,10 @@ public class Calculator {
         }
     }
 
+
+
+    // IGNORE for now
+    // SecondaryScreen Functions Only
     public void factorial() {
         if (current.equals("0") || decimal == true || negative == true) {
             return;

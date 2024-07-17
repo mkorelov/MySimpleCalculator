@@ -13,6 +13,7 @@ PrimaryScreen Bugs:
 - update functions so that they round/cut-off differently depending on the screen size
 
 SecondaryScreen Bugs:
+- consider creating other methods for secondary screen instead of reusing or differentiating in what screen it was called for rounding pruposes
 - shouldn't be able to add numbers to pi or euler's, should just replace them
 
 Potential Updates:
