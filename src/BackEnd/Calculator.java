@@ -27,9 +27,10 @@ public class Calculator {
 
     // add a number to the display
     public void enterDigit(String num) {
-        if (num_chars == 10 || (num_chars == 9 && negative == false)) {
+        if (num_chars >= 10 || (num_chars == 9 && negative == false)) {
             return;
         }
+
         if (current.equals("0")) {
             current = num;
         } else if (current.equals("-0")) {
@@ -55,7 +56,7 @@ public class Calculator {
 
     // adds a decimal point if one hasn't been added
     public void decimal() {
-        if (num_chars == 10) {
+        if (num_chars >= 10 || (num_chars == 9 && negative == false)) {
             return;
         }
 

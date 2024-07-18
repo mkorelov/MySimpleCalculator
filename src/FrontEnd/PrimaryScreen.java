@@ -315,7 +315,7 @@ class PrimaryScreenFrame extends BorderPane {
         buttons = new PrimaryScreen();
 
         this.setTop(display);
-        this.setCenter(buttons);
+        this.setBottom(buttons);
 
         moreButton = buttons.getMoreButton();
         clearButton = buttons.getClearButton();
