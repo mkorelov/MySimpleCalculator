@@ -4,12 +4,12 @@ import java.math.*;
 
 // Calculator Logic
 public class Calculator {
-    String current; // a member variable that keeps the current number on display and updates the UI
+    String current;     // stores the current number on display
     boolean decimal;    // flag that indicates if number is already decimal
     boolean negative;   // flag that indicates if number is already negative
-    int num_chars;    // number of digits on display; reserve one for negative sign
-    String operation;   // current active operation
-    String previous;    // member variable that stores the number before an operation was pressed
+    int num_chars;      // stores the number of digits on display
+    String operation;   // stores the most recent operation pressed
+    String previous;    // stores the number before an operation was pressed
 
     public Calculator() {
         current = "0";
