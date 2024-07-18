@@ -282,19 +282,6 @@ class PrimaryScreenHeader extends HBox {
     }
 }
 
-// Error Message Display
-class PrimaryScreenFooter extends HBox {
-    PrimaryScreenFooter(String s) {
-        this.setPrefSize(400,100);
-        //this.setStyle();
-
-        Text text = new Text(s);
-        text.setFont(Font.font("Arial", FontWeight.BOLD, 70));
-        this.getChildren().add(text);
-        this.setAlignment(Pos.BOTTOM_RIGHT);
-    }
-}
-
 // Calculator UI
 class PrimaryScreenFrame extends BorderPane {
     private PrimaryScreenHeader display;
@@ -328,7 +315,7 @@ class PrimaryScreenFrame extends BorderPane {
         buttons = new PrimaryScreen();
 
         this.setTop(display);
-        this.setBottom(buttons);
+        this.setCenter(buttons);
 
         moreButton = buttons.getMoreButton();
         clearButton = buttons.getClearButton();
