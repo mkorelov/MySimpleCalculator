@@ -2,12 +2,19 @@
 
 This is my implementation of a Simple Calculator using Java & JavaFX on an Apple Silicon Mac in VSCode.
 
-## TODO
+## Instructions
+If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC"
 
+## TODO
 1. Implement Logic
 2. Improve UI (replace text with transparent images of symbols)
 3. Add error messages (Footer/header): can't perform operation with decimal, too many digits to fit on screen, etc.
 4. Have footer/header show the current operation (5.9 + 0)
+
+
+TODO: Fix the percent function to round
+TODO: Fix the equals function to round
+
 
 PrimaryScreen Bugs:
 - update functions so that they round/cut-off differently depending on the screen size

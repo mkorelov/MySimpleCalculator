@@ -27,6 +27,10 @@ public class Calculator {
 
     // add a number to the display
     public void enterDigit(String num) {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (num_chars >= 10 || (num_chars == 9 && negative == false)) {
             return;
         }
@@ -43,6 +47,10 @@ public class Calculator {
 
     // negates current number on display
     public void negate() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (negative == false) {
             current = "-" + current;
             negative = true;
@@ -56,6 +64,10 @@ public class Calculator {
 
     // adds a decimal point if one hasn't been added
     public void decimal() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (num_chars >= 10 || (num_chars == 9 && negative == false)) {
             return;
         }
@@ -67,15 +79,20 @@ public class Calculator {
     }
 
     public void percent() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (current.equals("0")) {
             return;
         }
         String s = Double.toString(Double.valueOf(current)/100);
         if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-            // introuduce a way to round if possible instead of not showing anything
+            current = "Error";
             return;
         }
         current = Double.toString(Double.valueOf(current)/100);
+
         if (Double.valueOf(current) % 1 != 0) {
             decimal = true;
         } else {
@@ -99,50 +116,74 @@ public class Calculator {
     }
 
     public void add() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (operation.equals("")) {
             previous = current;
             current = "0";
             decimal = false;
             negative = false;
+            num_chars = 1;
         }
         operation = "add";
     }
 
     public void subtract() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (operation.equals("")) {
             previous = current;
             current = "0";
             decimal = false;
             negative = false;
+            num_chars = 1;
         }
         operation = "subtract";
     }
 
     public void multiply() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (operation.equals("")) {
             previous = current;
             current = "0";
             decimal = false;
             negative = false;
+            num_chars = 1;
         }
         operation = "multiply";
     }
 
     public void divide() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (operation.equals("")) {
             previous = current;
             current = "0";
             decimal = false;
             negative = false;
+            num_chars = 1;
         }
         operation = "divide";
     }
 
     public void equals() {
+        if (current.equals("Error")) {
+            return;
+        }
+
         if (operation.equals("add")) {
             String s = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
             if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-                // introuduce a way to round if possible instead of not showing anything
+                current = "Error";
                 return;
             }
 
