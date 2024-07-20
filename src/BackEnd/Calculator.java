@@ -204,7 +204,7 @@ public class Calculator {
         } else if (operation.equals("subtract")) {
             String s = Double.toString(Double.valueOf(previous) - Double.valueOf(current));
             if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-                // introuduce a way to round if possible instead of not showing anything
+                current = "Error";
                 return;
             }
 
@@ -225,7 +225,7 @@ public class Calculator {
         } else if (operation.equals("multiply")) {
             String s = Double.toString(Double.valueOf(previous) * Double.valueOf(current));
             if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-                // introuduce a way to round if possible instead of not showing anything
+                current = "Error";
                 return;
             }
 
@@ -246,7 +246,7 @@ public class Calculator {
         } else if (operation.equals("divide")) {
             String s = Double.toString(Double.valueOf(previous) / Double.valueOf(current));
             if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-                // introuduce a way to round if possible instead of not showing anything
+                current = "Error";
                 return;
             }
 
