@@ -82,7 +82,15 @@ public class Calculator {
         String s = Double.toString(Double.valueOf(current)/100);
         BigDecimal bd = new BigDecimal(s);
         String ss = bd.toPlainString();
-        if (ss.length() >= 10 || (ss.length() == 9 && negative == false)) {
+
+        int num_digs = 0;
+        for (int i = 0; i < ss.length(); i++) {
+            if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                num_digs += 1;
+            }
+        }
+
+        if (ss.length() > 11 || num_digs > 9) {
             if (ss.contains(".")) {
                 int count = 0;  // digits before decimal point
                 for (int i = 0; i < ss.length(); i++) {
@@ -93,7 +101,7 @@ public class Calculator {
                     }
                 }
 
-                if (count > 9) {    //is it roundable
+                if (count > 9) {    // is it roundable
                     current = "Error";
                     return;
                 } else {
