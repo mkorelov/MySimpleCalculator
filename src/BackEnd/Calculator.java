@@ -7,7 +7,8 @@ public class Calculator {
     String current;     // stores the current number on display
     boolean decimal;    // flag that indicates if number is already decimal
     boolean negative;   // flag that indicates if number is already negative
-    int num_chars;      // stores the number of digits on display
+    int num_chars;      // stores the number of digits and other characters on display
+    int num_digits;     // stores the number of digits on display
     String operation;   // stores the most recent operation pressed
     String previous;    // stores the number before an operation was pressed
 
@@ -16,6 +17,7 @@ public class Calculator {
         decimal = false;
         negative = false;
         num_chars = 1;
+        num_digits = 1;
         operation = "";
         previous = "";
     }
@@ -27,11 +29,7 @@ public class Calculator {
 
     // add a number to the display
     public void enterDigit(String num) {
-        if (current.equals("Error")) {
-            return;
-        }
-
-        if (num_chars >= 10 || (num_chars == 9 && negative == false)) {
+        if (current.equals("Error") || num_chars >= 11 || num_digits >= 9) {
             return;
         }
 
@@ -42,6 +40,7 @@ public class Calculator {
         } else {
             current = current + num;
             num_chars += 1;
+            num_digits += 1;
         }
     }
 
@@ -64,34 +63,48 @@ public class Calculator {
 
     // adds a decimal point if one hasn't been added
     public void decimal() {
-        if (current.equals("Error")) {
-            return;
-        }
-
-        if (num_chars >= 10 || (num_chars == 9 && negative == false)) {
+        if (current.equals("Error") || num_digits >= 9) {
             return;
         }
 
         if (decimal == false) {
             current = current + ".";
             decimal = true;
+            num_chars += 1;
         }
     }
 
     public void percent() {
-        if (current.equals("Error")) {
+        if (current.equals("Error") || current.equals("0")) {
             return;
         }
 
-        if (current.equals("0")) {
-            return;
-        }
         String s = Double.toString(Double.valueOf(current)/100);
-        if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-            current = "Error";
-            return;
+        BigDecimal bd = new BigDecimal(s);
+        String ss = bd.toPlainString();
+        if (ss.length() >= 10 || (ss.length() == 9 && negative == false)) {
+            if (ss.contains(".")) {
+                int count = 0;  // digits before decimal point
+                for (int i = 0; i < ss.length(); i++) {
+                    if (ss.charAt(i) == '.') {
+                        break;
+                    } else {
+                        count += 1;
+                    }
+                }
+
+                if (count > 9) {    //is it roundable
+                    current = "Error";
+                    return;
+                } else {
+                    ss = ss.substring(0,10);
+                }
+            } else {
+                current = "Error";
+                return;
+            }
         }
-        current = Double.toString(Double.valueOf(current)/100);
+        current = ss;
 
         if (Double.valueOf(current) % 1 != 0) {
             decimal = true;
@@ -111,6 +124,7 @@ public class Calculator {
         decimal = false;
         negative = false;
         num_chars = 1;
+        num_digits = 1;
         operation = "";
         previous = "";
     }

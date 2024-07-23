@@ -12,8 +12,7 @@ If you get an Error that means that the calculator could not display the result 
 4. Have footer/header show the current operation (5.9 + 0)
 
 
-TODO: Fix the percent function to round
-TODO: Fix the equals function to round
+TODO: Fix the percent & equals function to round if it is a decimal that can be rounded otherwise show the Error message like currently implmented
 
 
 PrimaryScreen Bugs:
