@@ -106,8 +106,15 @@ public class Calculator {
                     return;
                 } else {
                     ss = ss.substring(0,10);
-                    //num_digits =;
-                    //num chars = 
+                    num_digits = 0;
+                    num_chars = 0;
+                    for (int i = 0; i < ss.length(); i++) {
+                        if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                            num_digits += 1;
+                        }
+                        num_chars += 1;
+                    }
+                    System.out.println("Digits: " + num_digits + " | Chars: " + num_chars);
                 }
             } else {
                 current = "Error";
