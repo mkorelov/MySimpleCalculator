@@ -6,14 +6,9 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC"
 
 ## TODO
-1. Implement Logic
-2. Improve UI (replace text with transparent images of symbols)
-3. Add error messages (Footer/header): can't perform operation with decimal, too many digits to fit on screen, etc.
-4. Have footer/header show the current operation (5.9 + 0)
-
-
-TODO: Fix the percent & equals function to round if it is a decimal that can be rounded otherwise show the Error message like currently implmented
-
+1. Copy rounding in percent methdo to the equals function
+2. Update all functions to properly keep track of the number of digits and chars
+3. Improve UI (replace text with transparent images of symbols)
 
 PrimaryScreen Bugs:
 - update functions so that they round/cut-off differently depending on the screen size

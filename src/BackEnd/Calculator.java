@@ -106,6 +106,8 @@ public class Calculator {
                     return;
                 } else {
                     ss = ss.substring(0,10);
+                    //num_digits =;
+                    //num chars = 
                 }
             } else {
                 current = "Error";
