@@ -18,7 +18,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
-// Calculator Buttons
 class PrimaryScreen extends GridPane {
     private Button more;
     private Button clear;
@@ -43,7 +42,6 @@ class PrimaryScreen extends GridPane {
 
     PrimaryScreen() {
         this.setPrefSize(400,500);
-        //this.setStyle();
 
         String path = "src/expand.png";
         Image image = new Image(new File(path).toURI().toString());
@@ -269,11 +267,9 @@ class PrimaryScreen extends GridPane {
     }
 }
 
-// Calculator Display
 class PrimaryScreenHeader extends HBox {
     PrimaryScreenHeader(String s) {
         this.setPrefSize(400,100);
-        //this.setStyle();
 
         Text text = new Text(s);
         text.setFont(Font.font("Arial", FontWeight.BOLD, 70));
@@ -282,7 +278,6 @@ class PrimaryScreenHeader extends HBox {
     }
 }
 
-// Calculator UI
 class PrimaryScreenFrame extends BorderPane {
     private PrimaryScreenHeader display;
     private PrimaryScreen buttons;
@@ -343,12 +338,14 @@ class PrimaryScreenFrame extends BorderPane {
 
     public void addListeners() {
         moreButton.setOnAction(e -> {
-            /*Stage stage = (Stage) moreButton.getScene().getWindow();
+            /* IGNORE: First complete primary screen
+            Stage stage = (Stage) moreButton.getScene().getWindow();
             SecondaryScreenFrame primary = new SecondaryScreenFrame(calculator);
             stage.setTitle("Calculator");
             stage.setScene(new Scene(primary, 700, 600));
             stage.setResizable(false);
-            stage.show();*/
+            stage.show();
+            */
         });
 
         clearButton.setOnAction(e -> {

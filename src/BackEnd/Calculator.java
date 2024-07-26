@@ -2,15 +2,14 @@ package BackEnd;
 
 import java.math.*;
 
-// Calculator Logic
 public class Calculator {
-    String current;     // stores the current number on display
-    boolean decimal;    // flag that indicates if number is already decimal
-    boolean negative;   // flag that indicates if number is already negative
-    int num_chars;      // stores the number of digits and other characters on display
-    int num_digits;     // stores the number of digits on display
-    String operation;   // stores the most recent operation pressed
-    String previous;    // stores the number before an operation was pressed
+    String current;
+    boolean decimal;
+    boolean negative;
+    int num_chars;
+    int num_digits;
+    String operation;
+    String previous;
 
     public Calculator() {
         current = "0";
@@ -22,12 +21,10 @@ public class Calculator {
         previous = "";
     }
 
-    // returns the number that needs to be displayed by UI
     public String getCurrent() {
         return current;
     }
 
-    // add a number to the display
     public void enterDigit(String num) {
         if (current.equals("Error") || num_chars >= 11 || num_digits >= 9) {
             return;
@@ -44,7 +41,6 @@ public class Calculator {
         }
     }
 
-    // negates current number on display
     public void negate() {
         if (current.equals("Error")) {
             return;
@@ -61,7 +57,6 @@ public class Calculator {
         }
     }
 
-    // adds a decimal point if one hasn't been added
     public void decimal() {
         if (current.equals("Error") || num_digits >= 9) {
             return;
@@ -297,10 +292,7 @@ public class Calculator {
         }
     }
 
-
-
-    // IGNORE for now
-    // SecondaryScreen Functions Only
+    /* IGNORE: First complete primary screen
     public void factorial() {
         if (current.equals("0") || decimal == true || negative == true) {
             return;
@@ -440,4 +432,5 @@ public class Calculator {
     public void enterPi() {
         current = "3.141592653589793";
     }
+    */
 }

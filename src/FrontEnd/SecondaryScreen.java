@@ -18,7 +18,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
-// Calculator Buttons
 class SecondaryScreen extends GridPane {
     private Button less;
     private Button clear;
@@ -428,11 +427,9 @@ class SecondaryScreen extends GridPane {
     }
 }
 
-// Calculator Display
 class SecondaryScreenHeader extends HBox{
     SecondaryScreenHeader(String s) {
         this.setPrefSize(400,100);
-        //this.setStyle();
 
         Text text = new Text(s);
         text.setFont(Font.font("Arial", FontWeight.BOLD, 70));
@@ -441,7 +438,6 @@ class SecondaryScreenHeader extends HBox{
     }
 }
 
-// Calculator UI
 class SecondaryScreenFrame extends BorderPane {
     private SecondaryScreenHeader display;
     private SecondaryScreen buttons;
@@ -531,6 +527,7 @@ class SecondaryScreenFrame extends BorderPane {
     }
 
     public void addListeners() {
+        /* IGNORE: First complete primary screen
         lessButton.setOnAction(e -> {
             Stage stage = (Stage) lessButton.getScene().getWindow();
             PrimaryScreenFrame primary = new PrimaryScreenFrame(calculator);
@@ -731,5 +728,6 @@ class SecondaryScreenFrame extends BorderPane {
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
+        */
     }
 }
