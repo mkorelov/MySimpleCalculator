@@ -114,7 +114,6 @@ public class Calculator {
                         }
                         num_chars += 1;
                     }
-                    System.out.println("Digits: " + num_digits + " | Chars: " + num_chars);
                 }
             } else {
                 current = "Error";

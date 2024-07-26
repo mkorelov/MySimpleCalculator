@@ -9,6 +9,7 @@ If you get an Error that means that the calculator could not display the result 
 1. Copy rounding in percent methdo to the equals function
 2. Update all functions to properly keep track of the number of digits and chars
 3. Improve UI (replace text with transparent images of symbols)
+4. Repeat for secondary screen
 
 PrimaryScreen Bugs:
 - update functions so that they round/cut-off differently depending on the screen size
