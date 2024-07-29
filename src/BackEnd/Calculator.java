@@ -167,6 +167,7 @@ public class Calculator {
             decimal = false;
             negative = false;
             num_chars = 1;
+            num_digits = 1;
         }
         operation = "subtract";
     }
