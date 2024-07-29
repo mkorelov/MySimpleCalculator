@@ -151,6 +151,7 @@ public class Calculator {
             decimal = false;
             negative = false;
             num_chars = 1;
+            num_digits = 1;
         }
         operation = "add";
     }
@@ -207,12 +208,48 @@ public class Calculator {
 
         if (operation.equals("add")) {
             String s = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
-            if (s.length() >= 10 || (s.length() == 9 && negative == false)) {
-                current = "Error";
-                return;
+            BigDecimal bd = new BigDecimal(s);
+            String ss = bd.toPlainString();
+
+            int num_digs = 0;
+            for (int i = 0; i < ss.length(); i++) {
+                if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                    num_digs += 1;
+                }
             }
 
-            current = Double.toString(Double.valueOf(previous) + Double.valueOf(current));
+            if (ss.length() > 11 || num_digs > 9) {
+                if (ss.contains(".")) {
+                    int count = 0;  // digits before decimal point
+                    for (int i = 0; i < ss.length(); i++) {
+                        if (ss.charAt(i) == '.') {
+                            break;
+                        } else {
+                            count += 1;
+                        }
+                    }
+    
+                    if (count > 9) {    // is it roundable
+                        current = "Error";
+                        return;
+                    } else {
+                        ss = ss.substring(0,10);
+                        num_digits = 0;
+                        num_chars = 0;
+                        for (int i = 0; i < ss.length(); i++) {
+                            if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                                num_digits += 1;
+                            }
+                            num_chars += 1;
+                        }
+                    }
+                } else {
+                    current = "Error";
+                    return;
+                }
+            }
+            current = ss;
+
             if (Double.valueOf(current) % 1 != 0) {
                 decimal = true;
             } else {
