@@ -54,7 +54,7 @@ class PrimaryScreen extends GridPane {
         more.setPrefWidth(100);
         more.setPrefHeight(100);
 
-        clear = new Button("AC");
+        clear = new Button("C");
         clear.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         clear.setPrefWidth(100);
         clear.setPrefHeight(100);

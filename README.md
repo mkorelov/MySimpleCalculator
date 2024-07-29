@@ -6,7 +6,7 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC"
 
 ## TODO
-1. Copy rounding in percent methdo to the equals function
+1. Copy rounding in percent method to the equals function
 2. Update all functions to properly keep track of the number of digits and chars
 3. Improve UI (replace text with transparent images of symbols)
 4. Repeat for secondary screen
