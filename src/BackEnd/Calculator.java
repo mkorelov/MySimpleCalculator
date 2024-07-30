@@ -87,7 +87,7 @@ public class Calculator {
 
         if (ss.length() > 11 || num_digs > 9) {
             if (ss.contains(".")) {
-                int count = 0;  // digits before decimal point
+                int count = 0;
                 for (int i = 0; i < ss.length(); i++) {
                     if (ss.charAt(i) == '.') {
                         break;
@@ -96,7 +96,7 @@ public class Calculator {
                     }
                 }
 
-                if (count > 9) {    // is it roundable
+                if (count > 9) {
                     current = "Error";
                     return;
                 } else {
@@ -221,7 +221,7 @@ public class Calculator {
 
             if (ss.length() > 11 || num_digs > 9) {
                 if (ss.contains(".")) {
-                    int count = 0;  // digits before decimal point
+                    int count = 0;
                     for (int i = 0; i < ss.length(); i++) {
                         if (ss.charAt(i) == '.') {
                             break;
@@ -230,7 +230,7 @@ public class Calculator {
                         }
                     }
     
-                    if (count > 9) {    // is it roundable
+                    if (count > 9) {
                         current = "Error";
                         return;
                     } else {
@@ -278,7 +278,7 @@ public class Calculator {
 
             if (ss.length() > 11 || num_digs > 9) {
                 if (ss.contains(".")) {
-                    int count = 0;  // digits before decimal point
+                    int count = 0;
                     for (int i = 0; i < ss.length(); i++) {
                         if (ss.charAt(i) == '.') {
                             break;
@@ -287,7 +287,7 @@ public class Calculator {
                         }
                     }
     
-                    if (count > 9) {    // is it roundable
+                    if (count > 9) {
                         current = "Error";
                         return;
                     } else {
@@ -335,7 +335,7 @@ public class Calculator {
 
             if (ss.length() > 11 || num_digs > 9) {
                 if (ss.contains(".")) {
-                    int count = 0;  // digits before decimal point
+                    int count = 0;
                     for (int i = 0; i < ss.length(); i++) {
                         if (ss.charAt(i) == '.') {
                             break;
@@ -344,7 +344,7 @@ public class Calculator {
                         }
                     }
     
-                    if (count > 9) {    // is it roundable
+                    if (count > 9) {
                         current = "Error";
                         return;
                     } else {
@@ -392,7 +392,7 @@ public class Calculator {
 
             if (ss.length() > 11 || num_digs > 9) {
                 if (ss.contains(".")) {
-                    int count = 0;  // digits before decimal point
+                    int count = 0;
                     for (int i = 0; i < ss.length(); i++) {
                         if (ss.charAt(i) == '.') {
                             break;
@@ -401,7 +401,7 @@ public class Calculator {
                         }
                     }
     
-                    if (count > 9) {    // is it roundable
+                    if (count > 9) {
                         current = "Error";
                         return;
                     } else {
