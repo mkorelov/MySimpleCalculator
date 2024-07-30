@@ -183,6 +183,7 @@ public class Calculator {
             decimal = false;
             negative = false;
             num_chars = 1;
+            num_digits = 1;
         }
         operation = "multiply";
     }
@@ -198,6 +199,7 @@ public class Calculator {
             decimal = false;
             negative = false;
             num_chars = 1;
+            num_digits = 1;
         }
         operation = "divide";
     }
