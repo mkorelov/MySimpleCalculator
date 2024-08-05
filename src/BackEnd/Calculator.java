@@ -440,6 +440,7 @@ public class Calculator {
         }
     }
 
+    /*
     public void factorial() {
         if (current.equals("0") || decimal == true || negative == true) {
             return;
@@ -579,4 +580,5 @@ public class Calculator {
     public void enterPi() {
         current = "3.141592653589793";
     }
+    */
 }

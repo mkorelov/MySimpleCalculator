@@ -527,7 +527,7 @@ class SecondaryScreenFrame extends BorderPane {
     }
 
     public void addListeners() {
-        /*lessButton.setOnAction(e -> {
+        lessButton.setOnAction(e -> {
             Stage stage = (Stage) lessButton.getScene().getWindow();
             PrimaryScreenFrame primary = new PrimaryScreenFrame(calculator);
             stage.setTitle("Calculator");
@@ -536,6 +536,7 @@ class SecondaryScreenFrame extends BorderPane {
             stage.show();
         });
 
+        /*
         clearButton.setOnAction(e -> {
             calculator.clear();
             display = new SecondaryScreenHeader(calculator.getCurrent());
