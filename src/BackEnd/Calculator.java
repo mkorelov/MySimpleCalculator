@@ -444,7 +444,7 @@ public class Calculator {
 
     // Secondary Screen Functions
     public void digitTwo(String num) {
-        if (current.equals("Error") || num_chars >= 11 || num_digits >= 9) {
+        /*if (current.equals("Error") || num_chars >= 11 || num_digits >= 9) {
             return;
         }
 
@@ -456,11 +456,11 @@ public class Calculator {
             current = current + num;
             num_chars += 1;
             num_digits += 1;
-        }
+        }*/
     }
 
     public void decimalTwo() {
-        if (current.equals("Error") || num_digits >= 9) {
+        /*if (current.equals("Error") || num_digits >= 9) {
             return;
         }
 
@@ -468,11 +468,11 @@ public class Calculator {
             current = current + ".";
             decimal = true;
             num_chars += 1;
-        }
+        }*/
     }
 
     public void percentTwo() {
-        if (current.equals("Error") || current.equals("0")) {
+        /*if (current.equals("Error") || current.equals("0")) {
             return;
         }
 
@@ -529,11 +529,11 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        }
+        }*/
     }
 
     public void equalsTwo() {
-        if (current.equals("Error")) {
+        /*if (current.equals("Error")) {
             return;
         }
 
@@ -765,12 +765,11 @@ public class Calculator {
             }
             previous = "";
             operation = "";
-        }
+        }*/
     }
 
-    /*
     public void factorial() {
-        if (current.equals("0") || decimal == true || negative == true) {
+        /*if (current.equals("0") || decimal == true || negative == true) {
             return;
         }
         
@@ -784,11 +783,11 @@ public class Calculator {
             return;
         } else {
             current = s;
-        }
+        }*/
     }
 
     public void sine() {
-        String s = Double.toString(Math.sin(Double.valueOf(current)));
+        /*String s = Double.toString(Math.sin(Double.valueOf(current)));
         if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
@@ -803,11 +802,11 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        } 
+        }*/
     }
 
     public void cosine() {
-        String s = Double.toString(Math.cos(Double.valueOf(current)));
+        /*String s = Double.toString(Math.cos(Double.valueOf(current)));
         if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
@@ -822,11 +821,11 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        } 
+        }*/
     }
 
     public void tangent() {
-        String s = Double.toString(Math.tan(Double.valueOf(current)));
+        /*String s = Double.toString(Math.tan(Double.valueOf(current)));
         if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
@@ -841,11 +840,11 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        } 
+        }*/
     }
 
     public void arcsine() {
-        String s = Double.toString(Math.asin(Double.valueOf(current)));
+        /*String s = Double.toString(Math.asin(Double.valueOf(current)));
         if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
@@ -860,11 +859,11 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        } 
+        }*/
     }
 
     public void arccosine() {
-        String s = Double.toString(Math.acos(Double.valueOf(current)));
+        /*String s = Double.toString(Math.acos(Double.valueOf(current)));
         if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
@@ -879,11 +878,11 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        } 
+        }*/ 
     }
 
     public void arctangent() {
-        String s = Double.toString(Math.atan(Double.valueOf(current)));
+        /*String s = Double.toString(Math.atan(Double.valueOf(current)));
         if (s.length() >= 20 || (s.length() == 19 && negative == false)) {
             return;
         }
@@ -898,15 +897,14 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        } 
+        }*/
     }
 
     public void enterEuler() {
-        current = "2.718281828459045";
+        /*current = "2.718281828459045";*/
     }
 
     public void enterPi() {
-        current = "3.141592653589793";
+        /*current = "3.141592653589793";*/
     }
-    */
 }

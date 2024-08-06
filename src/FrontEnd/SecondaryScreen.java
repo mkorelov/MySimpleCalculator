@@ -727,6 +727,5 @@ class SecondaryScreenFrame extends BorderPane {
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
-        */
     }
 }
