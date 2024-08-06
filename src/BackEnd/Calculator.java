@@ -21,7 +21,7 @@ public class Calculator {
         previous = "";
     }
 
-    // Shared Functions between Primary & Secondary Screens
+    // Primary & Secondary Screen Functions
     public String getCurrent() {
         return current;
     }

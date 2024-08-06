@@ -536,7 +536,6 @@ class SecondaryScreenFrame extends BorderPane {
             stage.show();
         });
 
-        /*
         clearButton.setOnAction(e -> {
             calculator.clear();
             display = new SecondaryScreenHeader(calculator.getCurrent());
@@ -550,13 +549,13 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         percentButton.setOnAction(e -> {
-            calculator.percent();
+            calculator.percentTwo();
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         decimalButton.setOnAction(e -> {
-            calculator.decimal();
+            calculator.decimalTwo();
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
@@ -586,67 +585,67 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         equalsButton.setOnAction(e -> {
-            calculator.equals();
+            calculator.equalsTwo();
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         zeroButton.setOnAction(e -> {
-            calculator.enterDigit("0");
+            calculator.digitTwo("0");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         oneButton.setOnAction(e -> {
-            calculator.enterDigit("1");
+            calculator.digitTwo("1");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         twoButton.setOnAction(e -> {
-            calculator.enterDigit("2");
+            calculator.digitTwo("2");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         threeButton.setOnAction(e -> {
-            calculator.enterDigit("3");
+            calculator.digitTwo("3");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         fourButton.setOnAction(e -> {
-            calculator.enterDigit("4");
+            calculator.digitTwo("4");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         fiveButton.setOnAction(e -> {
-            calculator.enterDigit("5");
+            calculator.digitTwo("5");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         sixButton.setOnAction(e -> {
-            calculator.enterDigit("6");
+            calculator.digitTwo("6");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         sevenButton.setOnAction(e -> {
-            calculator.enterDigit("7");
+            calculator.digitTwo("7");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
 
         eightButton.setOnAction(e -> {
-            calculator.enterDigit("8");
+            calculator.digitTwo("8");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
         
         nineButton.setOnAction(e -> {
-            calculator.enterDigit("9");
+            calculator.digitTwo("9");
             display = new SecondaryScreenHeader(calculator.getCurrent());
             this.setTop(display);
         });
