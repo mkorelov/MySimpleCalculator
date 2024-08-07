@@ -61,7 +61,7 @@ class SecondaryScreen extends GridPane {
         less.setPrefWidth(100);
         less.setPrefHeight(100);
 
-        clear = new Button("AC");
+        clear = new Button("C");
         clear.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         clear.setPrefWidth(100);
         clear.setPrefHeight(100);
@@ -651,39 +651,39 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         sineButton.setOnAction(e -> {
-            calculator.sine();
+            /*calculator.sine();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         cosineButton.setOnAction(e -> {
-            calculator.cosine();
+            /*calculator.cosine();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         tangentButton.setOnAction(e -> {
-            calculator.tangent();
+            /*calculator.tangent();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         arcsineButton.setOnAction(e -> {
-            calculator.arcsine();
+            /*calculator.arcsine();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         arccosineButton.setOnAction(e -> {
-            calculator.arccosine();
+            /*calculator.arccosine();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         arctangentButton.setOnAction(e -> {
-            calculator.arctangent();
+            /*calculator.arctangent();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         exponentButton.setOnAction(e -> {
@@ -703,9 +703,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         factorialButton.setOnAction(e -> {
-            calculator.factorial();
+            /*calculator.factorial();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         eulers_expButton.setOnAction(e -> {
@@ -717,15 +717,15 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         euler_numButton.setOnAction(e -> {
-            calculator.enterEuler();
+            /*calculator.enterEuler();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
 
         piButton.setOnAction(e -> {
-            calculator.enterPi();
+            /*calculator.enterPi();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);
+            this.setTop(display);*/
         });
     }
 }

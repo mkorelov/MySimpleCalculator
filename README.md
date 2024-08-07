@@ -6,7 +6,7 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC"
 
 ## TODO
-1. Create a distinct methods for each operation possible on secondary screen
+1. Implement methods for each operation on secondary screen
 2. Update buttons with transparent pictures of symbols
 
 PrimaryScreen Bugs:
