@@ -444,7 +444,7 @@ public class Calculator {
 
     // Secondary Screen Functions
     public void digitTwo(String num) {
-        /*if (current.equals("Error") || num_chars >= 11 || num_digits >= 9) {
+        if (current.equals("Error") || num_chars >= 21 || num_digits >= 17) {
             return;
         }
 
@@ -456,7 +456,7 @@ public class Calculator {
             current = current + num;
             num_chars += 1;
             num_digits += 1;
-        }*/
+        }
     }
 
     public void decimalTwo() {
