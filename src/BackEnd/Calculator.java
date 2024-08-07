@@ -444,7 +444,7 @@ public class Calculator {
 
     // Secondary Screen Functions
     public void digitTwo(String num) {
-        if (current.equals("Error") || num_chars >= 21 || num_digits >= 17) {
+        if (current.equals("Error") || num_chars >= 18 || num_digits >= 16) {
             return;
         }
 
@@ -460,7 +460,7 @@ public class Calculator {
     }
 
     public void decimalTwo() {
-        /*if (current.equals("Error") || num_digits >= 9) {
+        if (current.equals("Error") || num_digits >= 16) {
             return;
         }
 
@@ -468,7 +468,7 @@ public class Calculator {
             current = current + ".";
             decimal = true;
             num_chars += 1;
-        }*/
+        }
     }
 
     public void percentTwo() {
