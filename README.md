@@ -11,6 +11,7 @@ If you get an Error that means that the calculator could not display the result 
 
 Bugs:
 - when switching between sec and prim screens, need to either reset display/calc or find a way to round
+- how do regular operations react when an automatic operation is clicked
 
 SecondaryScreen Bugs:
 - consider creating other methods for secondary screen instead of reusing or differentiating in what screen it was called for rounding pruposes
