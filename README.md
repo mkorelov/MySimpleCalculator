@@ -9,8 +9,8 @@ If you get an Error that means that the calculator could not display the result 
 1. Implement methods for each operation on secondary screen
 2. Update buttons with transparent pictures of symbols
 
-PrimaryScreen Bugs:
-- update functions so that they round/cut-off differently depending on the screen size
+Bugs:
+- when switching between sec and prim screens, need to either reset display/calc or find a way to round
 
 SecondaryScreen Bugs:
 - consider creating other methods for secondary screen instead of reusing or differentiating in what screen it was called for rounding pruposes

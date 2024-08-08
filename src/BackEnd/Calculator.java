@@ -472,7 +472,7 @@ public class Calculator {
     }
 
     public void percentTwo() {
-        /*if (current.equals("Error") || current.equals("0")) {
+        if (current.equals("Error") || current.equals("0")) {
             return;
         }
 
@@ -487,7 +487,7 @@ public class Calculator {
             }
         }
 
-        if (ss.length() > 11 || num_digs > 9) {
+        if (ss.length() > 18 || num_digs > 16) {
             if (ss.contains(".")) {
                 int count = 0;
                 for (int i = 0; i < ss.length(); i++) {
@@ -498,7 +498,7 @@ public class Calculator {
                     }
                 }
 
-                if (count > 9) {
+                if (count > 16) {
                     current = "Error";
                     return;
                 } else {
@@ -529,7 +529,7 @@ public class Calculator {
             negative = true;
         } else {
             negative = false;
-        }*/
+        }
     }
 
     public void equalsTwo() {
