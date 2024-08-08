@@ -529,6 +529,7 @@ class SecondaryScreenFrame extends BorderPane {
     public void addListeners() {
         lessButton.setOnAction(e -> {
             Stage stage = (Stage) lessButton.getScene().getWindow();
+            calculator.round();
             PrimaryScreenFrame primary = new PrimaryScreenFrame(calculator);
             stage.setTitle("Calculator");
             stage.setScene(new Scene(primary, 400, 600));

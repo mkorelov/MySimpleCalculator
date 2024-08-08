@@ -768,6 +768,67 @@ public class Calculator {
         }
     }
 
+    public void round() {
+        if (current.equals("Error") || current.equals("0")) {
+            return;
+        }
+
+        String s = Double.toString(Double.valueOf(current));
+        BigDecimal bd = new BigDecimal(s);
+        String ss = bd.toPlainString();
+
+        int num_digs = 0;
+        for (int i = 0; i < ss.length(); i++) {
+            if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                num_digs += 1;
+            }
+        }
+
+        if (ss.length() > 11 || num_digs > 9) {
+            if (ss.contains(".")) {
+                int count = 0;
+                for (int i = 0; i < ss.length(); i++) {
+                    if (ss.charAt(i) == '.') {
+                        break;
+                    } else {
+                        count += 1;
+                    }
+                }
+
+                if (count > 9) {
+                    current = "Error";
+                    return;
+                } else {
+                    ss = ss.substring(0,10);
+                    num_digits = 0;
+                    num_chars = 0;
+                    for (int i = 0; i < ss.length(); i++) {
+                        if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                            num_digits += 1;
+                        }
+                        num_chars += 1;
+                    }
+                }
+            } else {
+                current = "Error";
+                return;
+            }
+        }
+        current = ss;
+
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        }
+    }
+
     public void factorial() {
         /*if (current.equals("0") || decimal == true || negative == true) {
             return;
