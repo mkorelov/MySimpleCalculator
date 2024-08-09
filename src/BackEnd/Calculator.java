@@ -829,22 +829,22 @@ public class Calculator {
         }
     }
 
-    public void factorial() {
-        /*if (current.equals("0") || decimal == true || negative == true) {
+    public void factorial() {        
+        if (current.equals("Error") || current.equals("0") || decimal == true || negative == true) {
             return;
         }
-        
+
         int num = 1;
         for (int i = 2; i <= Integer.valueOf(current); i++) {
             num = num * i;
         }
         String s = Integer.toString(num);
 
-        if (s.length() >= 20 || (s.length() == 19 && negative == false) || s.equals("0")) {
-            return;
+        if (s.length() > 16 || s.equals("0")) {
+            current = "Error";
         } else {
             current = s;
-        }*/
+        }
     }
 
     public void sine() {
