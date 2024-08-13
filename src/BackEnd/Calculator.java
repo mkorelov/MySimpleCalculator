@@ -962,10 +962,22 @@ public class Calculator {
     }
 
     public void enterEuler() {
-        /*current = "2.718281828459045";*/
+        current = "2.718281828459045";
+        
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        }
     }
 
     public void enterPi() {
-        /*current = "3.141592653589793";*/
+        //current = "3.141592653589793";
     }
 }
