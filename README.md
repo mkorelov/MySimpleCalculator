@@ -3,7 +3,7 @@
 This is my implementation of a Simple Calculator using Java & JavaFX on an Apple Silicon Mac in VSCode.
 
 ## Instructions
-If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC"
+If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC". Trignometric functions function in radians.
 
 ## TODO
 1. Implement methods for each operation on secondary screen

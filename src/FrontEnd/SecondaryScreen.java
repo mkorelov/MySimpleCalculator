@@ -652,9 +652,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         sineButton.setOnAction(e -> {
-            /*calculator.sine();
+            calculator.sine();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);*/
+            this.setTop(display);
         });
 
         cosineButton.setOnAction(e -> {
