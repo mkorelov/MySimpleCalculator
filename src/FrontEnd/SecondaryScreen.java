@@ -664,9 +664,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         tangentButton.setOnAction(e -> {
-            /*calculator.tangent();
+            calculator.tangent();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);*/
+            this.setTop(display);
         });
 
         arcsineButton.setOnAction(e -> {
