@@ -682,9 +682,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         arctangentButton.setOnAction(e -> {
-            /*calculator.arctangent();
+            calculator.arctangent();
             display = new SecondaryScreenHeader(calculator.getCurrent());
-            this.setTop(display);*/
+            this.setTop(display);
         });
 
         exponentButton.setOnAction(e -> {
