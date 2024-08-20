@@ -700,7 +700,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         natural_logButton.setOnAction(e -> {
-            
+            calculator.naturalLog();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         factorialButton.setOnAction(e -> {
