@@ -1335,6 +1335,67 @@ public class Calculator {
         }
     }
 
+    public void euler() {
+        if (current.equals("Error")) {
+            return;
+        }
+
+        String s = Double.toString(Math.exp(Double.valueOf(current)));
+        BigDecimal bd = new BigDecimal(s);
+        String ss = bd.toPlainString();
+
+        int num_digs = 0;
+        for (int i = 0; i < ss.length(); i++) {
+            if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                num_digs += 1;
+            }
+        }
+
+        if (ss.length() > 18 || num_digs > 16) {
+            if (ss.contains(".")) {
+                int count = 0;
+                for (int i = 0; i < ss.length(); i++) {
+                    if (ss.charAt(i) == '.') {
+                        break;
+                    } else {
+                        count += 1;
+                    }
+                }
+
+                if (count > 16) {
+                    current = "Error";
+                    return;
+                } else {
+                    ss = ss.substring(0,10);
+                    num_digits = 0;
+                    num_chars = 0;
+                    for (int i = 0; i < ss.length(); i++) {
+                        if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                            num_digits += 1;
+                        }
+                        num_chars += 1;
+                    }
+                }
+            } else {
+                current = "Error";
+                return;
+            }
+        }
+        current = ss;
+
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        }
+    }
+
     public void enterEuler() {
         current = "2.718281828459045";
 
