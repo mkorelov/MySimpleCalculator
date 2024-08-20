@@ -1,6 +1,7 @@
 package BackEnd;
 
 import java.math.*;
+import java.util.Random;
 
 public class Calculator {
     String current;
@@ -1381,6 +1382,46 @@ public class Calculator {
                 return;
             }
         }
+        current = ss;
+
+        if (Double.valueOf(current) % 1 != 0) {
+            decimal = true;
+        } else {
+            current = Integer.toString((int) Math.round(Double.valueOf(current)));
+            decimal = false;
+        }
+        if (current.charAt(0) == '-') {
+            negative = true;
+        } else {
+            negative = false;
+        }
+    }
+
+    public void random() {
+        Random rand = new Random();
+        String s = Double.toString(rand.nextDouble(1));
+        BigDecimal bd = new BigDecimal(s);
+        String ss = bd.toPlainString();
+
+        int num_digs = 0;
+        for (int i = 0; i < ss.length(); i++) {
+            if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                num_digs += 1;
+            }
+        }
+
+        if (ss.length() > 18 || num_digs > 16) {
+            ss = ss.substring(0,10);
+            num_digits = 0;
+            num_chars = 0;
+            for (int i = 0; i < ss.length(); i++) {
+                if (ss.charAt(i) != '.' && ss.charAt(i) != '-') {
+                    num_digits += 1;
+                }
+                num_chars += 1;
+            }
+        }
+
         current = ss;
 
         if (Double.valueOf(current) % 1 != 0) {
