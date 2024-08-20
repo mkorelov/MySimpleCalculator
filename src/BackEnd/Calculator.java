@@ -503,7 +503,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -565,7 +565,7 @@ public class Calculator {
                         current = "Error";
                         return;
                     } else {
-                        ss = ss.substring(0,10);
+                        ss = ss.substring(0,17);
                         num_digits = 0;
                         num_chars = 0;
                         for (int i = 0; i < ss.length(); i++) {
@@ -622,7 +622,7 @@ public class Calculator {
                         current = "Error";
                         return;
                     } else {
-                        ss = ss.substring(0,10);
+                        ss = ss.substring(0,17);
                         num_digits = 0;
                         num_chars = 0;
                         for (int i = 0; i < ss.length(); i++) {
@@ -679,7 +679,7 @@ public class Calculator {
                         current = "Error";
                         return;
                     } else {
-                        ss = ss.substring(0,10);
+                        ss = ss.substring(0,17);
                         num_digits = 0;
                         num_chars = 0;
                         for (int i = 0; i < ss.length(); i++) {
@@ -736,7 +736,7 @@ public class Calculator {
                         current = "Error";
                         return;
                     } else {
-                        ss = ss.substring(0,10);
+                        ss = ss.substring(0,17);
                         num_digits = 0;
                         num_chars = 0;
                         for (int i = 0; i < ss.length(); i++) {
@@ -879,7 +879,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -940,7 +940,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1001,7 +1001,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1062,7 +1062,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1123,7 +1123,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1184,7 +1184,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1245,7 +1245,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1306,7 +1306,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1367,7 +1367,7 @@ public class Calculator {
                     current = "Error";
                     return;
                 } else {
-                    ss = ss.substring(0,10);
+                    ss = ss.substring(0,17);
                     num_digits = 0;
                     num_chars = 0;
                     for (int i = 0; i < ss.length(); i++) {
@@ -1411,7 +1411,7 @@ public class Calculator {
         }
 
         if (ss.length() > 18 || num_digs > 16) {
-            ss = ss.substring(0,10);
+            ss = ss.substring(0,17);
             num_digits = 0;
             num_chars = 0;
             for (int i = 0; i < ss.length(); i++) {
