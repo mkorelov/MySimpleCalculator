@@ -696,7 +696,9 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         logarithmButton.setOnAction(e -> {
-            
+            calculator.logarithm();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         natural_logButton.setOnAction(e -> {
