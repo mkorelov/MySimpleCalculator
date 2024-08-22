@@ -1036,6 +1036,11 @@ public class Calculator {
             return;
         }
 
+        if (Double.valueOf(current) > 1 || Double.valueOf(current) < -1) {
+            current = "Error";
+            return;
+        }
+
         String s = Double.toString(Math.asin(Double.valueOf(current)));
         BigDecimal bd = new BigDecimal(s);
         String ss = bd.toPlainString();
