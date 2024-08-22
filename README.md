@@ -10,7 +10,7 @@ If you get an Error that means that the calculator could not display the result 
 2. Update buttons with transparent pictures of symbols
 
 Bugs:
-- roudning on secondary screen is still to 10 characters; update substring function arguments from 10 to 16
+- check for valid inputs for all secondary functions
 
 SecondaryScreen Bugs:
 - consider creating other methods for secondary screen instead of reusing or differentiating in what screen it was called for rounding pruposes
