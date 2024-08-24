@@ -1295,6 +1295,11 @@ public class Calculator {
             return;
         }
 
+        if (Double.valueOf(current) <= 0) {
+            current = "Error";
+            return;
+        }
+
         String s = Double.toString(Math.log10(Double.valueOf(current)));
         BigDecimal bd = new BigDecimal(s);
         String ss = bd.toPlainString();
