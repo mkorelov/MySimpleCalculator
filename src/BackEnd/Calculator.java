@@ -1504,4 +1504,20 @@ public class Calculator {
         }
         operation = "exponent";
     }
+
+    public void root() {
+        if (current.equals("Error")) {
+            return;
+        }
+
+        if (operation.equals("")) {
+            previous = current;
+            current = "0";
+            decimal = false;
+            negative = false;
+            num_chars = 1;
+            num_digits = 1;
+        }
+        operation = "root";
+    }
 }
