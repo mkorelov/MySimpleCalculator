@@ -688,11 +688,15 @@ class SecondaryScreenFrame extends BorderPane {
         });
 
         exponentButton.setOnAction(e -> {
-            
+            calculator.exponent();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         rootButton.setOnAction(e -> {
-            
+            calculator.root();
+            display = new SecondaryScreenHeader(calculator.getCurrent());
+            this.setTop(display);
         });
 
         logarithmButton.setOnAction(e -> {
