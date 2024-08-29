@@ -10,7 +10,7 @@ If you get an Error that means that the calculator could not display the result 
 2. Update buttons with transparent pictures of symbols
 
 Bugs:
-- check for inputs constarints for functions (log)
+- create way to calculate root, not just square root and cube root
 
 SecondaryScreen Bugs:
 - consider creating other methods for secondary screen instead of reusing or differentiating in what screen it was called for rounding pruposes
