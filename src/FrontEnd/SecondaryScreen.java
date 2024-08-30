@@ -56,10 +56,21 @@ class SecondaryScreen extends GridPane {
     private Button pi;
 
     SecondaryScreen() {
-        less = new Button("Less");
-        less.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        String path = "src/shrink.png";
+        Image image = new Image(new File(path).toURI().toString());
+        ImageView view = new ImageView(image);
+        view.setFitWidth(40);
+        view.setFitHeight(40);
+
+        less = new Button();
+        less.setGraphic(view);
         less.setPrefWidth(100);
         less.setPrefHeight(100);
+
+        /*less = new Button("Less");
+        less.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        less.setPrefWidth(100);
+        less.setPrefHeight(100);*/
 
         clear = new Button("C");
         clear.setFont(Font.font("Arial", FontWeight.BOLD, 30));

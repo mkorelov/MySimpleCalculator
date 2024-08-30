@@ -6,15 +6,11 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC". Trignometric functions function in radians.
 
 ## TODO
-1. Implement methods for each operation on secondary screen
-2. Update buttons with transparent pictures of symbols
+1. Update buttons with transparent pictures of symbols
 
 Bugs:
-- create way to calculate root, not just square root and cube root
-
-SecondaryScreen Bugs:
-- consider creating other methods for secondary screen instead of reusing or differentiating in what screen it was called for rounding pruposes
 - shouldn't be able to add numbers to pi or euler's, should just replace them
+- check that each function and button don't break functionality
 
 Potential Updates:
 - clear just resets everything, doesn't have dual functions where you can retype one number
