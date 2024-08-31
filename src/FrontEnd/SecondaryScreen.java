@@ -67,11 +67,6 @@ class SecondaryScreen extends GridPane {
         less.setPrefWidth(100);
         less.setPrefHeight(100);
 
-        /*less = new Button("Less");
-        less.setFont(Font.font("Arial", FontWeight.BOLD, 30));
-        less.setPrefWidth(100);
-        less.setPrefHeight(100);*/
-
         clear = new Button("C");
         clear.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         clear.setPrefWidth(100);
@@ -237,8 +232,14 @@ class SecondaryScreen extends GridPane {
         euler_num.setPrefWidth(100);
         euler_num.setPrefHeight(100);
 
-        pi = new Button("pi");
-        pi.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        path = "src/pi.png";
+        image = new Image(new File(path).toURI().toString());
+        view = new ImageView(image);
+        view.setFitWidth(40);
+        view.setFitHeight(40);
+
+        pi = new Button();
+        pi.setGraphic(view);
         pi.setPrefWidth(100);
         pi.setPrefHeight(100);
 
