@@ -229,7 +229,7 @@ class SecondaryScreen extends GridPane {
         eulers_exp.setPrefHeight(100);
 
         random = new Button("rand");
-        random.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        random.setFont(Font.font("Arial", FontWeight.BOLD, 28));
         random.setPrefWidth(100);
         random.setPrefHeight(100);
 
