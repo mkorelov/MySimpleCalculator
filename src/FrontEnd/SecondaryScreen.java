@@ -102,8 +102,14 @@ class SecondaryScreen extends GridPane {
         times.setPrefWidth(100);
         times.setPrefHeight(100);
 
-        divide = new Button("/");
-        divide.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        path = "src/divide.png";
+        image = new Image(new File(path).toURI().toString());
+        view = new ImageView(image);
+        view.setFitWidth(40);
+        view.setFitHeight(40);
+
+        divide = new Button();
+        divide.setGraphic(view);
         divide.setPrefWidth(100);
         divide.setPrefHeight(100);
 
