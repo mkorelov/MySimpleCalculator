@@ -229,8 +229,14 @@ class SecondaryScreen extends GridPane {
         factorial.setPrefWidth(100);
         factorial.setPrefHeight(100);
 
-        eulers_exp = new Button("e^x");
-        eulers_exp.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        path = "src/eulerexp.png";
+        image = new Image(new File(path).toURI().toString());
+        view = new ImageView(image);
+        view.setFitWidth(40);
+        view.setFitHeight(40);
+
+        eulers_exp = new Button();
+        eulers_exp.setGraphic(view);
         eulers_exp.setPrefWidth(100);
         eulers_exp.setPrefHeight(100);
 
