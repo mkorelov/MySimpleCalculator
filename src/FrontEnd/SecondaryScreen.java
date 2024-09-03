@@ -197,9 +197,15 @@ class SecondaryScreen extends GridPane {
         arctangent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         arctangent.setPrefWidth(100);
         arctangent.setPrefHeight(100);
-    
-        exponent = new Button("x^y");
-        exponent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+
+        path = "src/exp.png";
+        image = new Image(new File(path).toURI().toString());
+        view = new ImageView(image);
+        view.setFitWidth(40);
+        view.setFitHeight(40);
+
+        exponent = new Button();
+        exponent.setGraphic(view);
         exponent.setPrefWidth(100);
         exponent.setPrefHeight(100);
 
@@ -228,8 +234,8 @@ class SecondaryScreen extends GridPane {
         eulers_exp.setPrefWidth(100);
         eulers_exp.setPrefHeight(100);
 
-        random = new Button("rand");
-        random.setFont(Font.font("Arial", FontWeight.BOLD, 28));
+        random = new Button("Rand");
+        random.setFont(Font.font("Arial", FontWeight.BOLD, 26));
         random.setPrefWidth(100);
         random.setPrefHeight(100);
 
