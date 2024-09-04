@@ -56,7 +56,7 @@ class SecondaryScreen extends GridPane {
     private Button pi;
 
     SecondaryScreen() {
-        String path = "src/shrink.png";
+        /*String path = "src/shrink.png";
         Image image = new Image(new File(path).toURI().toString());
         ImageView view = new ImageView(image);
         view.setFitWidth(40);
@@ -64,6 +64,11 @@ class SecondaryScreen extends GridPane {
 
         less = new Button();
         less.setGraphic(view);
+        less.setPrefWidth(100);
+        less.setPrefHeight(100);*/
+
+        less = new Button("Less");
+        less.setFont(Font.font("Arial", FontWeight.BOLD, 27));
         less.setPrefWidth(100);
         less.setPrefHeight(100);
 
@@ -102,7 +107,7 @@ class SecondaryScreen extends GridPane {
         times.setPrefWidth(100);
         times.setPrefHeight(100);
 
-        path = "src/divide.png";
+        /*path = "src/divide.png";
         image = new Image(new File(path).toURI().toString());
         view = new ImageView(image);
         view.setFitWidth(40);
@@ -110,6 +115,11 @@ class SecondaryScreen extends GridPane {
 
         divide = new Button();
         divide.setGraphic(view);
+        divide.setPrefWidth(100);
+        divide.setPrefHeight(100);*/
+
+        divide = new Button("/");
+        divide.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         divide.setPrefWidth(100);
         divide.setPrefHeight(100);
 
@@ -198,7 +208,7 @@ class SecondaryScreen extends GridPane {
         arctangent.setPrefWidth(100);
         arctangent.setPrefHeight(100);
 
-        path = "src/exp.png";
+        /*path = "src/exp.png";
         image = new Image(new File(path).toURI().toString());
         view = new ImageView(image);
         view.setFitWidth(40);
@@ -206,6 +216,11 @@ class SecondaryScreen extends GridPane {
 
         exponent = new Button();
         exponent.setGraphic(view);
+        exponent.setPrefWidth(100);
+        exponent.setPrefHeight(100);*/
+
+        exponent = new Button("x^y");
+        exponent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         exponent.setPrefWidth(100);
         exponent.setPrefHeight(100);
 
@@ -229,7 +244,7 @@ class SecondaryScreen extends GridPane {
         factorial.setPrefWidth(100);
         factorial.setPrefHeight(100);
 
-        path = "src/eulerexp.png";
+        /*path = "src/eulerexp.png";
         image = new Image(new File(path).toURI().toString());
         view = new ImageView(image);
         view.setFitWidth(40);
@@ -237,6 +252,11 @@ class SecondaryScreen extends GridPane {
 
         eulers_exp = new Button();
         eulers_exp.setGraphic(view);
+        eulers_exp.setPrefWidth(100);
+        eulers_exp.setPrefHeight(100);*/
+
+        eulers_exp = new Button("e^x");
+        eulers_exp.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         eulers_exp.setPrefWidth(100);
         eulers_exp.setPrefHeight(100);
 
@@ -250,7 +270,7 @@ class SecondaryScreen extends GridPane {
         euler_num.setPrefWidth(100);
         euler_num.setPrefHeight(100);
 
-        path = "src/pi.png";
+        /*path = "src/pi.png";
         image = new Image(new File(path).toURI().toString());
         view = new ImageView(image);
         view.setFitWidth(40);
@@ -258,6 +278,11 @@ class SecondaryScreen extends GridPane {
 
         pi = new Button();
         pi.setGraphic(view);
+        pi.setPrefWidth(100);
+        pi.setPrefHeight(100);*/
+
+        pi = new Button("pi");
+        pi.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         pi.setPrefWidth(100);
         pi.setPrefHeight(100);
 

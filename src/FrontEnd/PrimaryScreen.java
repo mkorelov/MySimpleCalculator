@@ -43,7 +43,7 @@ class PrimaryScreen extends GridPane {
     PrimaryScreen() {
         this.setPrefSize(400,500);
 
-        String path = "src/expand.png";
+        /*String path = "src/expand.png";
         Image image = new Image(new File(path).toURI().toString());
         ImageView view = new ImageView(image);
         view.setFitWidth(40);
@@ -51,6 +51,11 @@ class PrimaryScreen extends GridPane {
 
         more = new Button();
         more.setGraphic(view);
+        more.setPrefWidth(100);
+        more.setPrefHeight(100);*/
+
+        more = new Button("More");
+        more.setFont(Font.font("Arial", FontWeight.BOLD, 26));
         more.setPrefWidth(100);
         more.setPrefHeight(100);
 
@@ -89,7 +94,7 @@ class PrimaryScreen extends GridPane {
         times.setPrefWidth(100);
         times.setPrefHeight(100);
 
-        path = "src/divide.png";
+        /*path = "src/divide.png";
         image = new Image(new File(path).toURI().toString());
         view = new ImageView(image);
         view.setFitWidth(40);
@@ -97,6 +102,11 @@ class PrimaryScreen extends GridPane {
 
         divide = new Button();
         divide.setGraphic(view);
+        divide.setPrefWidth(100);
+        divide.setPrefHeight(100);*/
+
+        divide = new Button("/");
+        divide.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         divide.setPrefWidth(100);
         divide.setPrefHeight(100);
 
