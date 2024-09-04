@@ -184,17 +184,17 @@ class SecondaryScreen extends GridPane {
         tangent.setPrefHeight(100);
 
         arcsine = new Button("sin^-1");
-        arcsine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        arcsine.setFont(Font.font("Arial", FontWeight.BOLD, 23));
         arcsine.setPrefWidth(100);
         arcsine.setPrefHeight(100);
 
         arccosine = new Button("cos^-1");
-        arccosine.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        arccosine.setFont(Font.font("Arial", FontWeight.BOLD, 22));
         arccosine.setPrefWidth(100);
         arccosine.setPrefHeight(100);
 
         arctangent = new Button("tan^-1");
-        arctangent.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        arctangent.setFont(Font.font("Arial", FontWeight.BOLD, 23));
         arctangent.setPrefWidth(100);
         arctangent.setPrefHeight(100);
 
@@ -209,13 +209,13 @@ class SecondaryScreen extends GridPane {
         exponent.setPrefWidth(100);
         exponent.setPrefHeight(100);
 
-        root = new Button("sqrt(x)");
+        root = new Button("y/x");
         root.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         root.setPrefWidth(100);
         root.setPrefHeight(100);
 
-        logarithm = new Button("log_x");
-        logarithm.setFont(Font.font("Arial", FontWeight.BOLD, 30));
+        logarithm = new Button("log_10");
+        logarithm.setFont(Font.font("Arial", FontWeight.BOLD, 25));
         logarithm.setPrefWidth(100);
         logarithm.setPrefHeight(100);
 
