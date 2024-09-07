@@ -2,6 +2,10 @@
 
 This is my implementation of a Simple Calculator using Java & JavaFX on an Apple Silicon Mac in VSCode.
 
+![alt text](<Screenshot 2024-09-07 at 1.09.13 PM.png>)
+
+![alt text](<Screenshot 2024-09-07 at 1.09.35 PM.png>)
+
 ## Instructions
 If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC". Trignometric functions function in radians.
 

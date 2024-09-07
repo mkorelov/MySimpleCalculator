@@ -224,7 +224,7 @@ class SecondaryScreen extends GridPane {
         exponent.setPrefWidth(100);
         exponent.setPrefHeight(100);
 
-        root = new Button("y/x");
+        root = new Button("y/^x");
         root.setFont(Font.font("Arial", FontWeight.BOLD, 30));
         root.setPrefWidth(100);
         root.setPrefHeight(100);
