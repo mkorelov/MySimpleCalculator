@@ -7,16 +7,16 @@ This is my implementation of a Simple Calculator using Java & JavaFX on an Apple
 ![alt text](<Screenshot 2024-09-07 at 1.09.35 PM.png>)
 
 ## Instructions
-If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC". Trignometric functions function in radians.
+
+If you get an Error that means that the calculator could not display the result becuase it is too long. To continue using the calculator, click on the clear button "AC". Trignometric functions are in radians.
 
 ## TODO
-1. Update buttons with transparent pictures of symbols
 
 Bugs:
-- shouldn't be able to add numbers to pi or euler's, should just replace them
-- check that each function and button don't break functionality
 
 Potential Updates:
+- Update buttons with transparent pictures of symbols
+- shouldn't be able to add numbers to pi or euler's, should just replace them 
 - clear just resets everything, doesn't have dual functions where you can retype one number
 - clear button should initially display AC, after a number is entered it switches to C if clicked then it returns to AC
 - clicking clear button when it display C means clear the current number, but if an operation is hit before you need to then hit AC after as well to all clear
